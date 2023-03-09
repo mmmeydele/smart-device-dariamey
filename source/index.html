@@ -8,42 +8,43 @@
     <title>Smart Device</title>
     <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="main-header">
-        <div class="container">
-
+      <header class="main-header main-header__fixed ">
+        <div class="main-header__wrap">
           <a class="main-header__logo logo logo--none">
-            <img class="main-header__logo-image" src="img/svg/logo.svg" width="55" height="55"
-              alt="Логотип сайта">
-              <p class="main-header__logo-title">Smart Device</p>
-              <p class="main-header__logo-description">умные технологии</p>
+            <img class="logo__image" src="img/svg/logo.svg" width="55" height="55"
+                alt="Логотип сайта">
+              <span class="logo__text">
+                <p class="logo__title">Smart Device</p>
+                <p class="logo__description">умные технологии</p>
+              </span>
           </a>
 
-          <ul class="main-header__contacts contacts">
-            <li class="main-header__contacts-email contacts__email">
-              <a class="contacts__email-link" href="#">
-                <svg class="contacts__email-link-icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-email"></use>
-                </svg>
-                <span class="contacts__email-text">info@sd.ru</span>
-              </a>
-            </li>
-            <li class="main-header__contacts-phone contacts__phone">
-              <a class="contacts__phone-link" href="tel:+74950005252">
-                <svg class="contacts__phone-link-icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-                <span class="contacts__phone-text">+7 (495) 000 52 52</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="main-header__contacts contacts">
+              <li class="main-header__contacts-email contacts__email">
+                <a class="contacts__email-link" href="#">
+                  <svg class="contacts__email-link-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                  <span class="contacts__email-text">info@sd.ru</span>
+                </a>
+              </li>
+              <li class="main-header__contacts-phone contacts__phone">
+                <a class="contacts__phone-link" href="tel:+74950005252">
+                  <svg class="contacts__phone-link-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span class="contacts__phone-text">+7 (495) 000 52 52</span>
+                </a>
+              </li>
+            </ul>
 
-          <p><a class="button button_call btn" href="#" data-open-modal="call">Заказать звонок</a></p>
-
-        </div>
+            <p class="main-header__button-wrap"><a class="main-header__button btn" href="#" data-open-modal="call">Заказать звонок</a></p>
+          </div>
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Магазин электронных комплектующих и производство печатных плат</h1>
@@ -138,10 +139,10 @@
         <div class="container">
 
           <a class="main-footer__logo logo logo--none">
-            <img class="main-footer__logo-image" src="img/svg/logo.svg" width="55" height="55"
-              alt="Логотип сайта">
-              <p class="main-footer__logo-title">Smart Device</p>
-              <p class="main-footer__logo-description">умные технологии</p>
+            <img class="logo__image" src="img/svg/logo.svg" width="55" height="55"
+                alt="Логотип сайта">
+                <p class="logo__title">Smart Device</p>
+                <p class="logo__description">умные технологии</p>
           </a>
 
           <div class="socials">
@@ -247,7 +248,7 @@
             </svg>
           </button>
 
-          <form class="call-form form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="form__field" type="text" id="call-name" placeholder="Имя" required>
               <input class="form__field" type="tel" id="call-phone" placeholder="Телефон" required>
               <textarea class="form__textarea" placeholder="Ваш вопрос"></textarea>

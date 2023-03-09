@@ -1,0 +1,47 @@
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #f2f5f7;
+
+  margin: 0;
+  padding-left: 15px;
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    display: inline-block;
+  }
+}
+
+.logo__description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  margin: 0;
+  padding-left: 15px;
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    display: inline-block;
+  }
+}
