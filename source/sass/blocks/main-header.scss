@@ -15,7 +15,7 @@
   }
 }
 
-// .main-header__fixed {
+// .main-header--fixed {
 //   position: fixed;
 //   top: 0;
 //   z-index: 100;
@@ -26,7 +26,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 1024px;
 
   @media (max-width: $vp-768) {
     justify-content: space-between;
