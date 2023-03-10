@@ -1,0 +1,19 @@
+.socials {
+  width: 150px;
+}
+
+.socials__list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.socials__item {
+  padding: 5px;
+}
