@@ -180,13 +180,12 @@
             </div>
           </div>
 
-          <div class="main-footer__site-office">
-            <div class="site-sections">
-              <p class="site-sections__title">Разделы сайта</p>
-              <button class="site-sections__toggle toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <ul class="site-sections__list">
+          <div class="main-footer__site-office accordion"  id="accordion-1">
+            <div class="site-sections accordion__item">
+              <div class="site-sections__title accordion__header">
+                <span class="accordion__toggle accordion__toggle--closed">Разделы сайта</span>
+              </div>
+              <ul class="site-sections__list accordion__body">
                 <li class="site-sections__item">
                   <a class="site-sections__link" href="#">О Компании</a>
                 </li>
@@ -211,12 +210,11 @@
               </ul>
             </div>
 
-            <div class="office">
-              <p class="office__title">Наш офис</p>
-              <button class="office__toggle toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <ul class="office__list">
+            <div class="office accordion__item">
+              <div class="office__title accordion__header">
+                <span class="accordion__toggle accordion__toggle--opened">Наш офис<span>
+              </div>
+              <ul class="office__list accordion__body">
                 <li class="office__item">
                   <p class="office__address">г. Мытищи, Олимпийский проспект, д.10</p>
                 </li>

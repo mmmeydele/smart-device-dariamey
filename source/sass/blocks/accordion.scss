@@ -1,0 +1,43 @@
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+.accordion__header {
+  @media (max-width: $vp-767) {
+    position: relative;
+  }
+}
+
+.accordion__toggle.accordion__toggle--closed {
+  @media (max-width: $vp-767) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 285px;
+      width: 15px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.accordion__toggle.accordion__toggle--opened {
+  @media (max-width: $vp-767) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 285px;
+      width: 15px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+}
