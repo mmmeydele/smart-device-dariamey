@@ -1,0 +1,137 @@
+.intro {
+  background-image: url("../img/intro/intro-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 1920px;
+  height: 880px;
+
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/intro-desktop@2x.jpg");
+    object-fit: cover;
+    background-size: 1920px auto;
+  }
+
+  @media (max-width: $vp-1023) {
+    background-image: url("../img/intro/intro-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 1023px;
+    height: 640px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-tablet@2x.jpg");
+      object-fit: cover;
+      background-size: 1023px auto;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    background-image: url("../img/intro/intro-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    height: 560px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-mobile@2x.jpg");
+      object-fit: cover;
+    }
+  }
+}
+
+.intro__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 26%;
+
+  @media (max-width: $vp-1023) {
+    top: 35%;
+    left: 10%;
+  }
+}
+
+.intro__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: #f2f5f7;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $vp-1023) {
+    font-size: 64px;
+    line-height: 75px;
+
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 36px;
+    line-height: 42px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.intro__description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+
+  color: #f2f5f7;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 155%;
+  }
+}
+
+.intro__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #f2f5f7;
+  background: #00b2ff;
+  border-radius: 3px;
+
+  padding: 15px 25px;
+  width: 410px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 7%;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-left: 0;
+  }
+}

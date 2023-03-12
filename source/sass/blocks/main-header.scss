@@ -10,16 +10,16 @@
   flex-direction: row;
   justify-content: center;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     padding: 0 50px;
   }
 }
 
-// .main-header--fixed {
-//   position: fixed;
-//   top: 0;
-//   z-index: 100;
-// }
+.main-header--fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
 
 .main-header__wrap {
   display: flex;
@@ -30,12 +30,8 @@
 
 
 .main-header__button-wrap {
-  @media (min-width: $vp-320) {
+  @media (max-width: $vp-767) {
     display: none;
-  }
-
-  @media (min-width: $vp-1024) {
-    display: inline-block;
   }
 }
 
@@ -55,11 +51,15 @@
   border-radius: 3px;
   padding: 10px 15px;
 
-  @media (min-width: $vp-320) {
+  @media (max-width: $vp-320) {
     display: none;
   }
 
-  @media (min-width: $vp-1024) {
-    display: inline-block;
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+
+  @media (max-width: $vp-1023) {
+    display: none;
   }
 }
