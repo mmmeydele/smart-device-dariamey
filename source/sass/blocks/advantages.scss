@@ -1,0 +1,168 @@
+.advantages {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 870px;
+  padding: 120px 30px;
+
+  @media (max-width: $vp-1023) {
+    height: 910px;
+    padding: 80px 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 1520px;
+    padding: 50px 25px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 595px 595px;
+  gap: 15px;
+
+  list-style: none;
+
+  width: 1222px;
+  height: 630px;
+  padding: 0 30px;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 320px 320px;
+    gap: 30px;
+
+    width: 670px;
+    height: 750px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  border: 1px solid #ebebeb;
+  height: 300px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 298px;
+    left: 0;
+    background: #00b2ff;
+  }
+
+  @media (max-width: $vp-1023) {
+    height: 360px;
+
+    &::before {
+      height: 358px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    height: 340px;
+
+    &::before {
+      height: 338px;
+    }
+  }
+}
+
+.advantages__item-wrap:hover h3,
+.advantages__item-wrap:hover p,
+.advantages__item-wrap:hover svg use {
+  stroke: #f2f5f6;
+  color: #f2f5f6;
+}
+
+
+.advantages__item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 45px 35px;
+
+  &:hover {
+    background: #00b2ff;
+    color: #f2f5f6;
+  }
+
+  @media (max-width: $vp-1023) {
+    height: 360px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    height: 340px;
+  }
+}
+
+.advantages__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.advantages__icon use {
+  color: #00b2ff;
+}
+
+.advantages__icon:hover {
+  stroke: #f2f5f6;
+  fill: #f2f5f6;
+}
+
+
+.advantages__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #00b2ff;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 20px;
+
+  &:hover {
+    color: #f2f5f6;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+  }
+}
+
+.advantages__description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+
+  color: #041827;
+
+  width: 505px;
+  margin: 0;
+
+  &:hover {
+    color: #f2f5f6;
+  }
+
+  @media (max-width: $vp-1023) {
+    width: 245px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    width: 210px;
+  }
+}
+

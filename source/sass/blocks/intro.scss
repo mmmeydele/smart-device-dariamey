@@ -82,6 +82,8 @@
     line-height: 42px;
 
     margin-bottom: 20px;
+
+    width: 270px;
   }
 }
 
@@ -104,6 +106,8 @@
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 155%;
+
+    width: 270px;
   }
 }
 
@@ -129,9 +133,19 @@
   }
 
   @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.intro__button.intro__button--mobile {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: inline-block;
     font-size: 14px;
     line-height: 16px;
 
     margin-left: 0;
+    width: 270px;
   }
 }

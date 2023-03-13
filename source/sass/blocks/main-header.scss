@@ -30,7 +30,7 @@
 
 
 .main-header__button-wrap {
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     display: none;
   }
 }
@@ -52,10 +52,6 @@
   padding: 10px 15px;
 
   @media (max-width: $vp-320) {
-    display: none;
-  }
-
-  @media (max-width: $vp-767) {
     display: none;
   }
 
