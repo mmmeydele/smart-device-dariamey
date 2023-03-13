@@ -3,11 +3,11 @@
   max-width: 1920px;
   margin: 0 auto;
   height: 870px;
-  padding: 120px 30px;
+  padding: 120px 15px;
 
   @media (max-width: $vp-1023) {
     height: 910px;
-    padding: 80px 30px;
+    padding: 80px 15px;
   }
 
   @media (max-width: $vp-767) {
@@ -51,9 +51,14 @@
     position: absolute;
     content: "";
     width: 5px;
-    height: 298px;
+    height: 296px;
     left: 0;
     background: #00b2ff;
+  }
+
+  &:hover {
+    background: #00b2ff;
+    color: #f2f5f6;
   }
 
   @media (max-width: $vp-1023) {

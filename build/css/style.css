@@ -1523,7 +1523,7 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   height: 870px;
-  padding: 120px 30px;
+  padding: 120px 15px;
 }
 
 .advantages__list {
@@ -1548,9 +1548,14 @@ button,
   position: absolute;
   content: "";
   width: 5px;
-  height: 298px;
+  height: 296px;
   left: 0;
   background: #00b2ff;
+}
+
+.advantages__item:hover {
+  background: #00b2ff;
+  color: #f2f5f6;
 }
 
 .advantages__item-wrap:hover h3,
@@ -1622,6 +1627,79 @@ button,
 
 .advantages__description:hover {
   color: #f2f5f6;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 600px;
+  padding: 0 15px;
+}
+
+.about__wrap {
+  width: 1220px;
+  height: 320px;
+  padding-left: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.about__wrap::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/about-2022.png");
+  left: 0;
+  width: 150px;
+  height: 320px;
+}
+
+.about__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about__description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  margin: 0;
+  margin-top: 15px;
+  width: 970px;
+}
+
+.about__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  padding: 14px;
+  width: 180px;
+  margin-top: 40px;
 }
 
 .main-footer {
@@ -1958,7 +2036,7 @@ button,
 
   .advantages {
     height: 910px;
-    padding: 80px 30px;
+    padding: 80px 15px;
   }
 
   .advantages__list {

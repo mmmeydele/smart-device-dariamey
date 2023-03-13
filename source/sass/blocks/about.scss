@@ -1,0 +1,73 @@
+.about {
+  display: flex;
+
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 600px;
+  padding: 0 15px;
+}
+
+.about__wrap {
+  width: 1220px;
+  height: 320px;
+  padding-left: 250px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/about-2022.png");
+    left: 0;
+    width: 150px;
+    height: 320px;
+  }
+}
+
+
+.about__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about__description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #041827;
+
+  margin: 0;
+  margin-top: 15px;
+  width: 970px;
+}
+
+.about__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #00b2ff;
+
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  padding: 14px;
+  width: 180px;
+  margin-top: 40px;
+}
