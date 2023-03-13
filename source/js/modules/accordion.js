@@ -26,4 +26,19 @@ class ItcAccordion {
 
 new ItcAccordion('#accordion-1');
 
+// let accToggle = document.querySelector('.accordion__toggle');
+// let accItem = document.querySelector('.accordion__item');
+// let accHeader = document.querySelector('.accordion__header');
+
+
+// accHeader.addEventListener('click', function () {
+//   if (accItem.classList.contains('accordion__item_show')) {
+//     accToggle.classList.add('accordion__toggle--opened');
+//     accToggle.classList.remove('accordion__toggle--closed');
+//   } else {
+//     accToggle.classList.remove('accordion__toggle--opened');
+//     accToggle.classList.add('accordion__toggle--closed');
+//   }
+// });
+
 export {ItcAccordion};

@@ -2107,8 +2107,8 @@ button,
     transform: rotate(-90deg);
   }
 
-  .accordion__toggle.accordion__toggle--opened::before,
-  .accordion__toggle.accordion__toggle--opened::after {
+  .accordion__header.accordion__toggle--opened::before,
+  .accordion__header.accordion__toggle--opened::after {
     content: "";
     position: absolute;
     top: 28px;
@@ -2116,6 +2116,11 @@ button,
     width: 15px;
     height: 1px;
     background-color: #ffffff;
+  }
+
+  .accordion__item_show .accordion__header .accordion__toggle--closed::before,
+  .accordion__item_show .accordion__header .accordion__toggle--closed::after {
+    display: none;
   }
 }
 
