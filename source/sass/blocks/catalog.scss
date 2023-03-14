@@ -1,0 +1,324 @@
+.catalog {
+  height: 960px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background: #041827;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: $vp-1023) {
+    max-width: 1023px;
+    height: 1080px;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 767px;
+    height: 1050px;
+    padding-top: 50px;
+    padding-bottom: 86px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (max-width: $vp-320) {
+    max-width: 320px;
+  }
+}
+
+
+.catalog__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: #ffffff;
+
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (max-width: $vp-1023) {
+    width: 670px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.catalog__title.catalog__title--mobile {
+  display: none;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+
+  @media (max-width: $vp-767) {
+    display: inline-block;
+    font-size: 28px;
+    width: 270px;
+    height: 64px;
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: row;
+  gap: 85px;
+  padding: 0;
+  margin: 0 auto;
+
+  list-style: none;
+
+  width: 1220px;
+  height: 650px;
+
+  @media (max-width: $vp-1023) {
+    flex-direction: column;
+    gap: 35px;
+
+    width: 670px;
+    height: 810px;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 30px;
+
+    width: 270px;
+    height: 810px;
+  }
+}
+
+.catalog__item {
+  width: 350px;
+  height: 650px;
+
+  position: relative;
+
+  @media (max-width: $vp-1023) {
+    width: 670px;
+    height: 250px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    height: 250px;
+  }
+}
+
+
+.catalog__item.catalog__item--accessories {
+  background-image: url("../img/cards/card-accessories-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/cards/card-accessories-desktop@2x.jpg");
+  //   background-position: bottom, left top;
+  //   background-repeat: no-repeat, no-repeat;
+  //   width: 350px;
+  //   height: 650px;
+  // }
+
+  @media (max-width: $vp-1023) {
+    background-image: url("../img/cards/card-accessories-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-accessories-tablet@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 670px;
+    //   height: 250px;
+    // }
+  }
+
+  @media (max-width: $vp-767) {
+    background-image: url("../img/cards/card-accessories-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-accessories-mobile@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 270px;
+    //   height: 250px;
+    // }
+  }
+}
+
+.catalog__item.catalog__item--installation {
+  background-image: url("../img/cards/card-installation-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/cards/card-installation-desktop@2x.jpg");
+  //   background-position: bottom, left top;
+  //   background-repeat: no-repeat, no-repeat;
+  //   width: 350px;
+  //   height: 650px;
+  // }
+
+  @media (max-width: $vp-1023) {
+    background-image: url("../img/cards/card-installation-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-installation-tablet@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 670px;
+    //   height: 250px;
+    // }
+  }
+
+  @media (max-width: $vp-767) {
+    background-image: url("../img/cards/card-installation-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-installation-mobile@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 270px;
+    //   height: 250px;
+    // }
+  }
+}
+
+.catalog__item.catalog__item--production {
+  background-image: url("../img/cards/card-production-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/cards/card-production-desktop@2x.jpg");
+  //   background-position: bottom, left top;
+  //   background-repeat: no-repeat, no-repeat;
+  //   width: 350px;
+  //   height: 650px;
+  // }
+
+  @media (max-width: $vp-1023) {
+    background-image: url("../img/cards/card-production-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-production-tablet@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 670px;
+    //   height: 250px;
+    // }
+  }
+
+  @media (max-width: $vp-767) {
+    background-image: url("../img/cards/card-production-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/cards/card-production-mobile@2x.jpg");
+    //   background-position: bottom, left top;
+    //   background-repeat: no-repeat, no-repeat;
+    //   width: 270px;
+    //   height: 250px;
+    // }
+  }
+}
+
+.catalog__item-link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+  }
+}
+
+.catalog__item-title {
+  width: 230px;
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 40px;
+
+  @media (max-width: $vp-767) {
+    width: 150px;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+.catalog__item-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  background: #00b2ff;
+  border-radius: 3px 0 0 0;
+
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+
+  @media (max-width: $vp-767) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.catalog__icon {
+  @media (max-width: $vp-767) {
+    width: 10px;
+    height: 10px;
+  }
+}

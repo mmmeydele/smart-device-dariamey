@@ -1709,6 +1709,131 @@ button,
   margin-top: 40px;
 }
 
+.catalog {
+  height: 960px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #041827;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.catalog__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.catalog__title.catalog__title--mobile {
+  display: none;
+}
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 85px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  width: 1220px;
+  height: 650px;
+}
+
+.catalog__item {
+  width: 350px;
+  height: 650px;
+  position: relative;
+}
+
+.catalog__item.catalog__item--accessories {
+  background-image: url("../img/cards/card-accessories-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item.catalog__item--installation {
+  background-image: url("../img/cards/card-installation-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item.catalog__item--production {
+  background-image: url("../img/cards/card-production-desktop.jpg");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item-link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.catalog__item-title {
+  width: 230px;
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 40px;
+}
+
+.catalog__item-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #00b2ff;
+  border-radius: 3px 0 0 0;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+}
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2097,6 +2222,62 @@ button,
     margin-top: 20px;
   }
 
+  .catalog {
+    max-width: 1023px;
+    height: 1080px;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog__title {
+    width: 670px;
+  }
+
+  .catalog__title.catalog__title--mobile {
+    display: none;
+  }
+
+  .catalog__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 35px;
+    width: 670px;
+    height: 810px;
+  }
+
+  .catalog__item {
+    width: 670px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-tablet.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 670px;
+    height: 250px;
+  }
+
   .main-footer__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2300,6 +2481,82 @@ button,
 
   .about__button {
     width: 180px;
+  }
+
+  .catalog {
+    max-width: 767px;
+    height: 1050px;
+    padding-top: 50px;
+    padding-bottom: 86px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .catalog__title {
+    display: none;
+  }
+
+  .catalog__title.catalog__title--mobile {
+    display: inline-block;
+    font-size: 28px;
+    width: 270px;
+    height: 64px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__list {
+    gap: 30px;
+    width: 270px;
+    height: 810px;
+  }
+
+  .catalog__item {
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__item-link {
+    font-size: 18px;
+  }
+
+  .catalog__item-title {
+    width: 150px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .catalog__item-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .catalog__icon {
+    width: 10px;
+    height: 10px;
   }
 
   .main-footer__wrap {
@@ -2554,6 +2811,10 @@ button,
     background-repeat: no-repeat, no-repeat;
     width: 640px;
     height: 560px;
+  }
+
+  .catalog {
+    max-width: 320px;
   }
 
   .page-container {
