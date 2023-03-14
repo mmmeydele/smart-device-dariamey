@@ -561,16 +561,9 @@ button,
 
 .wrapper {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
 }
 
 .wrapper .header,
@@ -1524,6 +1517,16 @@ button,
   margin: 0 auto;
   height: 870px;
   padding: 120px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .advantages__list {
@@ -1633,16 +1636,21 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  height: 600px;
   padding: 0 15px;
+  padding-bottom: 100px;
 }
 
 .about__wrap {
-  width: 1220px;
-  height: 320px;
   padding-left: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1670,7 +1678,6 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .about__description {
@@ -1921,6 +1928,13 @@ button,
   display: none;
 }
 
+.page-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  max-width: 1920px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1987,6 +2001,10 @@ button,
 }
 
 @media (max-width: 1023px) {
+  .main-header__wrap {
+    max-width: 1023px;
+  }
+
   .main-header__button-wrap {
     display: none;
   }
@@ -2017,7 +2035,7 @@ button,
 
   .intro__wrap {
     top: 35%;
-    left: 10%;
+    left: 25%;
   }
 
   .intro__title {
@@ -2061,6 +2079,22 @@ button,
 
   .advantages__description {
     width: 245px;
+  }
+
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .about__wrap {
+    padding-left: 180px;
+  }
+
+  .about__description {
+    width: 495px;
+  }
+
+  .about__button {
+    margin-top: 20px;
   }
 
   .main-footer__wrap {
@@ -2115,6 +2149,10 @@ button,
   .office {
     max-width: 320px;
   }
+
+  .page-container {
+    max-width: 1023px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
@@ -2150,6 +2188,10 @@ button,
     padding: 0 50px;
   }
 
+  .main-header__wrap {
+    max-width: 767px;
+  }
+
   .logo__title {
     display: none;
   }
@@ -2168,6 +2210,7 @@ button,
     background-image: url("../img/intro/intro-mobile.jpg");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
+    width: 767px;
     height: 560px;
   }
 
@@ -2209,13 +2252,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .advantages__item {
-    width: 270px;
+    width: 320px;
     height: 340px;
   }
 
@@ -2235,6 +2275,31 @@ button,
   .advantages__description {
     font-size: 14px;
     width: 210px;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .about__wrap {
+    padding-left: 25px;
+  }
+
+  .about__wrap::before {
+    display: none;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about__description {
+    font-size: 14px;
+    width: 270px;
+  }
+
+  .about__button {
+    width: 180px;
   }
 
   .main-footer__wrap {
@@ -2388,6 +2453,10 @@ button,
   .accordion__item_show .accordion__header .accordion__toggle--closed::after {
     display: none;
   }
+
+  .page-container {
+    max-width: 767px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2458,10 +2527,15 @@ button,
     background-image: url("../img/intro/intro-mobile@2x.jpg");
     -o-object-fit: cover;
     object-fit: cover;
+    background-size: 767px auto;
   }
 }
 
 @media (max-width: 320px) {
+  .main-header__wrap {
+    max-width: 320px;
+  }
+
   .main-header__button {
     display: none;
   }
@@ -2472,6 +2546,26 @@ button,
 
   .contacts__phone-text {
     display: none;
+  }
+
+  .intro {
+    background-image: url("../img/intro/intro-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 640px;
+    height: 560px;
+  }
+
+  .page-container {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 320px) and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../img/intro/intro-mobile@2x.jpg");
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 

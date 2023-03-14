@@ -26,8 +26,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
 
+  @media (max-width: $vp-1023) {
+    max-width: 1023px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 767px;
+  }
+
+  @media (max-width: $vp-320) {
+    max-width: 320px;
+  }
+}
 
 .main-header__button-wrap {
   @media (max-width: $vp-1023) {

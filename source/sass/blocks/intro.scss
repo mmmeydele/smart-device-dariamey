@@ -31,11 +31,27 @@
     background-image: url("../img/intro/intro-mobile.jpg");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
+    width: 767px;
     height: 560px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/intro-mobile@2x.jpg");
       object-fit: cover;
+      background-size: 767px auto;
+    }
+  }
+
+  @media (max-width: $vp-320) {
+    background-image: url("../img/intro/intro-mobile.jpg");
+    background-position: bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    width: 640px;
+    height: 560px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-mobile@2x.jpg");
+      object-fit: cover;
+      // background-size: 640px auto;
     }
   }
 }
@@ -52,7 +68,7 @@
 
   @media (max-width: $vp-1023) {
     top: 35%;
-    left: 10%;
+    left: 25%;
   }
 }
 

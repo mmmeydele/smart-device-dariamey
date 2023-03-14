@@ -5,6 +5,10 @@
   height: 870px;
   padding: 120px 15px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (max-width: $vp-1023) {
     height: 910px;
     padding: 80px 15px;
@@ -38,7 +42,7 @@
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 }
 
@@ -70,7 +74,7 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 270px;
+    width: 320px;
     height: 340px;
 
     &::before {

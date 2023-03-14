@@ -1,16 +1,24 @@
 .about {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  height: 600px;
   padding: 0 15px;
+  padding-bottom: 100px;
+
+  @media (max-width: $vp-1023) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 50px;
+  }
 }
 
 .about__wrap {
-  width: 1220px;
-  height: 320px;
   padding-left: 250px;
 
   display: flex;
@@ -25,6 +33,19 @@
     width: 150px;
     height: 320px;
   }
+
+  @media (max-width: $vp-1023) {
+    padding-left: 180px;
+  }
+
+
+  @media (max-width: $vp-767) {
+    padding-left: 25px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 
@@ -36,7 +57,10 @@
   line-height: 51px;
 
   margin: 0;
-  margin-bottom: 15px;
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+  }
 }
 
 .about__description {
@@ -51,6 +75,15 @@
   margin: 0;
   margin-top: 15px;
   width: 970px;
+
+  @media (max-width: $vp-1023) {
+    width: 495px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    width: 270px;
+  }
 }
 
 .about__button {
@@ -70,4 +103,12 @@
   padding: 14px;
   width: 180px;
   margin-top: 40px;
+
+  @media (max-width: $vp-1023) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 180px;
+  }
 }
