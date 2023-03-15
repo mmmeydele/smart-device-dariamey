@@ -2070,7 +2070,7 @@ button,
   width: 510px;
   height: 285px;
   top: 246px;
-  left: 150px;
+  right: 1000px;
   background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
 }
@@ -2775,6 +2775,45 @@ button,
     height: 250px;
   }
 
+  .form {
+    height: 580px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  .form::before,
+  .form::after {
+    display: none;
+  }
+
+  .form__wrap {
+    position: static;
+    margin: 0 auto;
+    width: 670px;
+    height: 405px;
+  }
+
+  .form__description {
+    margin-bottom: 25px;
+  }
+
+  .form__call {
+    width: 670px;
+    height: 305px;
+  }
+
+  .form__field {
+    width: 320px;
+  }
+
+  .form__textarea {
+    width: 670px;
+  }
+
+  .form__button-submit {
+    margin-right: 85px;
+  }
+
   .main-footer__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3054,6 +3093,55 @@ button,
   .catalog__icon {
     width: 10px;
     height: 10px;
+  }
+
+  .form {
+    height: 750px;
+    padding-bottom: 90px;
+  }
+
+  .form__wrap {
+    width: 270px;
+    height: 610px;
+  }
+
+  .form__title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .form__description {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 40px;
+  }
+
+  .form__call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+    height: 450px;
+  }
+
+  .form__field {
+    width: 270px;
+  }
+
+  .form__field--name {
+    margin-bottom: 20px;
+  }
+
+  .form__textarea {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .form__button-submit {
+    width: 270px;
+    margin-bottom: 25px;
   }
 
   .main-footer__wrap {

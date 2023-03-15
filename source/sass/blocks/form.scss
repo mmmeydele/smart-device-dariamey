@@ -22,17 +22,32 @@
     transform: rotate(-53.1deg)
   }
 
-
   &::after {
     position: absolute;
     content: "";
     width: 510px;
     height: 285px;
     top: 246px;
-    left: 150px;
+    right: 1000px;
 
     background-image: url("../img/paper-airplane.png");
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: $vp-1023) {
+    height: 580px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    height: 750px;
+    padding-bottom: 90px;
   }
 }
 
@@ -44,6 +59,19 @@
   content: "";
   top: 170px;
   right: 15%;
+
+  @media (max-width: $vp-1023) {
+    position: static;
+    margin: 0 auto;
+
+    width: 670px;
+    height: 405px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    height: 610px;
+  }
 }
 
 .form__title {
@@ -57,6 +85,12 @@
 
   margin: 0;
   margin-bottom: 15px;
+
+  @media (max-width: $vp-767) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__description {
@@ -70,6 +104,16 @@
 
   margin: 0;
   margin-bottom: 35px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 40px;
+  }
 }
 
 .form__call {
@@ -79,6 +123,17 @@
 
   width: 580px;
   height: 225px;
+
+  @media (max-width: $vp-1023) {
+    width: 670px;
+    height: 305px;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    width: 270px;
+    height: 450px;
+  }
 }
 
 .form__field {
@@ -108,10 +163,22 @@
 
     color: #ffffff;
   }
+
+  @media (max-width: $vp-1023) {
+    width: 320px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+  }
 }
 
 .form__field--name {
   margin-right: 30px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__field--phone {
@@ -145,6 +212,16 @@
 
     color: #ffffff;
   }
+
+  @media (max-width: $vp-1023) {
+    width: 670px;
+
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .form__button-submit {
@@ -166,6 +243,15 @@
   background: #041427;
   border-radius: 3px;
   border-color: transparent;
+
+  @media (max-width: $vp-1023) {
+    margin-right: 85px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    margin-bottom: 25px;
+  }
 }
 
 .form__personal-info {
@@ -174,7 +260,6 @@
 
   display: flex;
   flex-direction: row;
-  // justify-content: center;
   align-items: center;
 }
 
