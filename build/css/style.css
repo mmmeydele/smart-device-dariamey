@@ -2675,6 +2675,7 @@ button,
   }
 
   .advantages {
+    max-width: 767px;
     height: 910px;
     padding: 80px 15px;
   }
@@ -2683,7 +2684,7 @@ button,
     -ms-grid-columns: 320px 320px;
     grid-template-columns: 320px 320px;
     gap: 30px;
-    width: 670px;
+    max-width: 670px;
     height: 750px;
   }
 
@@ -2957,6 +2958,7 @@ button,
   }
 
   .advantages {
+    max-width: 320px;
     height: 1520px;
     padding: 50px 25px;
   }
@@ -2969,6 +2971,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 320px;
   }
 
   .advantages__item {

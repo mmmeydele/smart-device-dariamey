@@ -31,14 +31,12 @@ new ItcAccordion('#accordion-1');
 // let accHeader = document.querySelector('.accordion__header');
 
 
-// accHeader.addEventListener('click', function () {
+// const btnMinus = accHeader.addEventListener('click', function () {
 //   if (accItem.classList.contains('accordion__item_show')) {
 //     accToggle.classList.add('accordion__toggle--opened');
 //     accToggle.classList.remove('accordion__toggle--closed');
-//   } else {
-//     accToggle.classList.remove('accordion__toggle--opened');
-//     accToggle.classList.add('accordion__toggle--closed');
 //   }
 // });
 
-export {ItcAccordion};
+
+export { ItcAccordion };
