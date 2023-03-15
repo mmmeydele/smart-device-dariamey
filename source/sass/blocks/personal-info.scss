@@ -1,0 +1,43 @@
+.personal-info__control {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: #00b3ff;
+
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  content: "";
+}
+
+.personal-info__checkbox[type="checkbox"]:checked+.personal-info__control {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: #00b3ff;
+
+  width: 15px;
+  height: 15px;
+}
+
+
+.personal-info__checkbox[type="checkbox"]:checked+.personal-info__control::before {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/svg/arrow-checkbox.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.personal-info__text {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}

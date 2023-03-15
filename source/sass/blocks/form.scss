@@ -1,0 +1,191 @@
+.form {
+  margin: 0 auto;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  width: 100%;
+  max-width: 1920px;
+  height: 840px;
+
+  position: relative;
+
+  background: #00b3ff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1265px;
+    height: 950px;
+    left: -755px;
+    bottom: 150px;
+
+    background: rgba(4, 24, 39, 0.5);
+    transform: rotate(-53.1deg)
+  }
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 510px;
+    height: 285px;
+    top: 246px;
+    left: 150px;
+
+    background-image: url("../img/paper-airplane.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.form__wrap {
+  width: 585px;
+  height: 420px;
+
+  position: absolute;
+  content: "";
+  top: 170px;
+  right: 15%;
+}
+
+.form__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: #FFFFFF;
+
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.form__description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #FFFFFF;
+
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.form__call {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 580px;
+  height: 225px;
+}
+
+.form__field {
+  width: 275px;
+  height: 50px;
+
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border-color: transparent;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #FFFFFF;
+
+  padding: 15px;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+}
+
+.form__field--name {
+  margin-right: 30px;
+}
+
+.form__field--phone {
+  margin-bottom: 20px;
+}
+
+.form__textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border-color: transparent;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  width: 580px;
+  height: 155px;
+  margin-bottom: 35px;
+  padding: 25px 15px;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+}
+
+.form__button-submit {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  width: 265px;
+  height: 45px;
+  margin-right: 30px;
+
+  background: #041427;
+  border-radius: 3px;
+  border-color: transparent;
+}
+
+.form__personal-info {
+  width: 265px;
+  height: 45px;
+
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+}
+
+.form__personal-info .personal-info__text {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.form__personal-info label {
+  margin: 5px;
+
+  width: 15px;
+  height: 15px;
+}
