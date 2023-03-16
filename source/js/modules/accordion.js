@@ -24,7 +24,15 @@ class ItcAccordion {
   }
 }
 
+
 new ItcAccordion('#accordion-1');
+
+// const isAcc = function () {
+//   if (window.innerWidth <= 767) {
+//     new ItcAccordion('#accordion-1');
+//   }
+// };
+
 
 // let accToggle = document.querySelector('.accordion__toggle');
 // let accItem = document.querySelector('.accordion__item');
