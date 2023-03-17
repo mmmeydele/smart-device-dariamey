@@ -3284,6 +3284,8 @@ button,
 
   .accordion__button {
     position: relative;
+    width: 320px;
+    padding: 0;
   }
 
   .accordion__toggle.accordion__toggle--closed::before,
