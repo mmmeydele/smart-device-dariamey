@@ -1,9 +1,17 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
-import { ItcAccordion } from './modules/accordion';
 import { phoneMask, modalMask } from './modules/imask';
 import { aboutFull, aboutCollapse } from './modules/about-block';
+import { togglePlus } from './modules/accordion-toggle';
+
+import { initAccordions, accordions } from './modules/init-accordion';
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+});
 
 // ---------------------------------
 

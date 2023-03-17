@@ -1,8 +1,45 @@
-.accordion__item:not(.accordion__item_show) .accordion__body {
-  display: none;
-}
+// .accordion {
+//   //max-width: 500px;
+//   margin: 0 auto 50px auto;
 
-.accordion__header {
+//   & & {
+//     width: 90%;
+//     margin: 0 auto;
+//   }
+
+//   &__element:last-child {
+//     margin-bottom: 0;
+//   }
+
+//   &__element {
+//     margin-bottom: 34px;
+//     padding: 10px;
+//   }
+
+//   &__element.is-active>&__button {
+//     opacity: 0.5;
+//   }
+
+//   &__button {
+//     width: 100%;
+//     padding: 10px;
+
+//     text-transform: uppercase;
+
+//     cursor: pointer;
+//   }
+
+//   &__wrapper {
+//     padding: 10px;
+//   }
+// }
+
+
+
+.accordion__button {
+  background-color: transparent;
+  border-style: none;
+
   @media (max-width: $vp-767) {
     position: relative;
   }
@@ -28,7 +65,7 @@
   }
 }
 
-.accordion__header.accordion__toggle--opened {
+.accordion__toggle.accordion__toggle--opened {
   @media (max-width: $vp-767) {
 
     &::before,
@@ -43,30 +80,3 @@
     }
   }
 }
-
-
-.accordion__item_show .accordion__header .accordion__toggle--closed {
-  @media (max-width: $vp-767) {
-
-    &::before,
-    &::after {
-      display: none;
-    }
-  }
-}
-
-// .accordion__item_show .accordion__header .accordion__toggle--opened {
-//   @media (max-width: $vp-767) {
-
-//     &::before,
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       top: 28px;
-//       left: 285px;
-//       width: 15px;
-//       height: 1px;
-//       background-color: #ffffff;
-//     }
-//   }
-// }
