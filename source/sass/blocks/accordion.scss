@@ -44,3 +44,29 @@
     }
   }
 }
+
+.accordion__element.is-active>.accordion__button .accordion__toggle--closed {
+  @media (max-width: $vp-767) {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.accordion__element.is-active>.accordion__button .accordion__toggle--opened {
+  @media (max-width: $vp-767) {
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 285px;
+      width: 15px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+}

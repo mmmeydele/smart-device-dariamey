@@ -3360,6 +3360,22 @@ button,
     background-color: #ffffff;
   }
 
+  .accordion__element.is-active > .accordion__button .accordion__toggle--closed::before,
+  .accordion__element.is-active > .accordion__button .accordion__toggle--closed::after {
+    display: none;
+  }
+
+  .accordion__element.is-active > .accordion__button .accordion__toggle--opened::before,
+  .accordion__element.is-active > .accordion__button .accordion__toggle--opened::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 285px;
+    width: 15px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
   .page-container {
     max-width: 767px;
   }

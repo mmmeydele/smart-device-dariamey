@@ -3,7 +3,6 @@ import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { phoneMask, modalMask } from './modules/imask';
 import { aboutFull, aboutCollapse } from './modules/about-block';
-import { togglePlus } from './modules/accordion-toggle';
 
 import { initAccordions, accordions } from './modules/init-accordion';
 
