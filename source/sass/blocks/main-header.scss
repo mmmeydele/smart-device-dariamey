@@ -34,12 +34,12 @@
   padding: 25px 30px;
 
   @media (max-width: $vp-1023) {
-    width: 767px;
+    width: 100%;
     padding: 22px 25px;
   }
 
   @media (max-width: $vp-767) {
-    width: 320px;
+    width: 100%;
     padding: 9px 15px;
   }
 
