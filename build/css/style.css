@@ -631,7 +631,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1222px;
+  width: 1222px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -1540,6 +1540,24 @@ button,
   padding: 25px 30px;
 }
 
+.main-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1220px;
+}
+
 .main-header__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1650,6 +1668,19 @@ button,
 }
 
 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
   background-image: url("../img/intro/intro-desktop.jpg");
   background-position: bottom, left top;
@@ -1670,10 +1701,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
-  content: "";
-  top: 40%;
-  left: 15%;
 }
 
 .intro__title {
@@ -2643,6 +2670,10 @@ button,
     display: none;
   }
 
+  .main-header__container {
+    width: 650px;
+  }
+
   .main-header__button {
     display: none;
   }
@@ -2667,11 +2698,6 @@ button,
     height: 640px;
   }
 
-  .intro__wrap {
-    top: 35%;
-    left: 10%;
-  }
-
   .intro__title {
     font-size: 64px;
     line-height: 75px;
@@ -2679,6 +2705,7 @@ button,
   }
 
   .intro__description {
+    width: 670px;
     margin-bottom: 50px;
   }
 
@@ -2931,6 +2958,10 @@ button,
     padding: 9px 15px;
   }
 
+  .main-header__container {
+    width: 260px;
+  }
+
   .logo {
     height: 35px;
   }
@@ -2960,11 +2991,6 @@ button,
     background-repeat: no-repeat, no-repeat;
     width: 100%;
     height: 560px;
-  }
-
-  .intro__wrap {
-    top: 25%;
-    left: 8%;
   }
 
   .intro__title {

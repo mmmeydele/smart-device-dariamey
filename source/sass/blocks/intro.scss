@@ -1,4 +1,9 @@
 .intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   margin: 0 auto;
 
   background-image: url("../img/intro/intro-desktop.jpg");
@@ -62,21 +67,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  position: absolute;
-  content: "";
-  top: 40%;
-  left: 15%;
-
-  @media (max-width: $vp-1023) {
-    top: 35%;
-    left: 10%;
-  }
-
-  @media (max-width: $vp-767) {
-    top: 25%;
-    left: 8%;
-  }
 }
 
 .intro__title {
@@ -123,6 +113,7 @@
   margin-bottom: 40px;
 
   @media (max-width: $vp-1023) {
+    width: 670px;
     margin-bottom: 50px;
   }
 

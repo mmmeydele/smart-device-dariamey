@@ -54,6 +54,24 @@
   }
 }
 
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 1220px;
+
+  @media (max-width: $vp-1023) {
+    width: 650px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 260px;
+  }
+}
+
 .main-header__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
