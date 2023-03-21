@@ -1,29 +1,31 @@
 .intro {
+  margin: 0 auto;
+
   background-image: url("../img/intro/intro-desktop.jpg");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 1920px;
+  width: 100%;
   height: 880px;
 
   position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro/intro-desktop@2x.jpg");
-    object-fit: cover;
-    background-size: 1920px auto;
+    // object-fit: cover;
+    background-size: cover;
   }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/intro/intro-tablet.jpg");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 1023px;
+    width: 767px;
     height: 640px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/intro-tablet@2x.jpg");
-      object-fit: cover;
-      background-size: 1023px auto;
+      // object-fit: cover;
+      background-size: cover;
     }
   }
 
@@ -31,13 +33,13 @@
     background-image: url("../img/intro/intro-mobile.jpg");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 767px;
+    width: 320px;
     height: 560px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/intro-mobile@2x.jpg");
-      object-fit: cover;
-      background-size: 767px auto;
+      // object-fit: cover;
+      background-size: cover;
     }
   }
 
@@ -45,13 +47,13 @@
     background-image: url("../img/intro/intro-mobile.jpg");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 640px;
+    width: 320px;
     height: 560px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/intro-mobile@2x.jpg");
-      object-fit: cover;
-      // background-size: 640px auto;
+      // object-fit: cover;
+      background-size: cover;
     }
   }
 }
@@ -64,11 +66,16 @@
   position: absolute;
   content: "";
   top: 40%;
-  left: 26%;
+  left: 15%;
 
   @media (max-width: $vp-1023) {
     top: 35%;
-    left: 25%;
+    left: 10%;
+  }
+
+  @media (max-width: $vp-767) {
+    top: 25%;
+    left: 8%;
   }
 }
 

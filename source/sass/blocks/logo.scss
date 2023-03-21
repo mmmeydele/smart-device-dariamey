@@ -5,6 +5,17 @@
 
   width: 215px;
   height: 55px;
+
+  @media (max-width: $vp-767) {
+    height: 35px;
+  }
+}
+
+.logo__image {
+  @media (max-width: $vp-767) {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 
