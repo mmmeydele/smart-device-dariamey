@@ -1799,9 +1799,9 @@ button,
   color: #f2f5f6;
 }
 
-.advantages__item-wrap:hover h3,
-.advantages__item-wrap:hover p,
-.advantages__item-wrap:hover svg use {
+.advantages__item:hover h3,
+.advantages__item:hover p,
+.advantages__item:hover use {
   stroke: #f2f5f6;
   color: #f2f5f6;
 }
@@ -1818,11 +1818,6 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   padding: 40px 45px 35px;
-}
-
-.advantages__item-wrap:hover {
-  background: #00b2ff;
-  color: #f2f5f6;
 }
 
 .advantages__icon {

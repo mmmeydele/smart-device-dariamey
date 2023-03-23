@@ -9,11 +9,6 @@ import { initAccordions, accordions } from './modules/init-accordion';
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initAccordions();
-    phoneMask();
-    modalMask();
-    aboutFull();
-    aboutCollapse();
-    accordions();
   });
 });
 
