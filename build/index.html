@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
+  <link rel="preload" href="fonts/pt-mono-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,7 +21,7 @@
     <header class="main-header">
       <div class="container main-header__wrap main-header__wrap--fixed">
         <div class="main-header__container">
-          <a class="main-header__logo logo logo--none">
+          <a class="main-header__logo logo logo--none" href="index.html">
             <img class="logo__image" src="img/svg/logo.svg" width="55" height="55" alt="Логотип сайта">
             <div class="logo__text">
               <p class="logo__title">Smart Device</p>
@@ -45,9 +48,7 @@
             </li>
           </ul>
 
-          <p class="main-header__button-wrap"><a class="main-header__button btn" href="#"
-              data-open-modal="call">Заказать
-              звонок</a></p>
+          <button class="main-header__button btn" data-open-modal="call">Заказать звонок</button>
         </div>
 
 
@@ -177,10 +178,11 @@
           <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
           <p class="form__description">Мы проконсультируем Вас бесплатно</p>
           <form class="form__call" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="form__field form__field--name" type="text" id="name" placeholder="Имя" required>
+            <input class="form__field form__field--name" type="text" id="name" placeholder="Имя" required
+              aria-label="name">
             <input class="form__field form__field--phone phone" minlength="16" maxlength="16" type="tel" id="phone"
-              placeholder="Телефон" required>
-            <textarea class="form__textarea" placeholder="Ваш вопрос"></textarea>
+              placeholder="Телефон" required aria-label="phone">
+            <textarea class="form__textarea" placeholder="Ваш вопрос" aria-label="question"></textarea>
 
             <button class="form__button-submit" type="submit">Задать вопрос</button>
             <div class="form__personal-info personal-info">
@@ -202,7 +204,7 @@
       <div class="container main-footer__wrap">
 
         <div class="main-footer__logo-socials">
-          <a class="main-footer__logo logo logo--none">
+          <a class="main-footer__logo logo logo--none" href="index.html">
             <img class="logo__image" src="img/svg/logo.svg" width="55" height="55" alt="Логотип сайта">
             <div class="logo__text">
               <p class="logo__title">Smart Device</p>
@@ -329,10 +331,11 @@
         </button>
 
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="modal__form-field" type="text" id="call-name" placeholder="Имя" required autofocus>
+          <input class="modal__form-field" type="text" id="call-name" placeholder="Имя" required autofocus
+            aria-label="name">
           <input class="modal__form-field modal__phone" type="tel" id="call-phone" minlength="16" maxlength="16"
-            placeholder="Телефон" required>
-          <textarea class="modal__textarea" placeholder="Ваш вопрос"></textarea>
+            placeholder="Телефон" required aria-label="phone">
+          <textarea class="modal__textarea" placeholder="Ваш вопрос" aria-label="question"></textarea>
 
           <button class="modal__button-submit modal__button-submit--active" type="submit">ОТПРАВИТЬ</button>
           <div class="modal__personal-info personal-info">

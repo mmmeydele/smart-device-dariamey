@@ -19,7 +19,7 @@
     bottom: 150px;
 
     background: rgba(4, 24, 39, 0.5);
-    transform: rotate(-53.1deg)
+    transform: rotate(-53.1deg);
   }
 
   &::after {
@@ -81,7 +81,7 @@
   font-size: 36px;
   line-height: 51px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin: 0;
   margin-bottom: 15px;
@@ -100,7 +100,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin: 0;
   margin-bottom: 35px;
@@ -150,7 +150,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   padding: 15px;
 
@@ -215,7 +215,6 @@
 
   @media (max-width: $vp-1023) {
     width: 670px;
-
   }
 
   @media (max-width: $vp-767) {

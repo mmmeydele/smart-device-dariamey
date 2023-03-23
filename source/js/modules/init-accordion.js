@@ -8,4 +8,3 @@ const initAccordions = () => {
 };
 
 export { initAccordions, accordions };
-

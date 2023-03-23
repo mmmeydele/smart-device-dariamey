@@ -6,7 +6,8 @@
 
   margin: 0 auto;
 
-  background-image: url("../img/intro/intro-desktop.jpg");
+  background-image: url("../img/intro/intro-desktop.webp");
+  background-color: #041827;
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
   width: 100%;
@@ -15,49 +16,45 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro/intro-desktop@2x.jpg");
-    // object-fit: cover;
+    background-image: url("../img/intro/intro-desktop@2x.webp");
     background-size: cover;
   }
 
   @media (max-width: $vp-1023) {
-    background-image: url("../img/intro/intro-tablet.jpg");
+    background-image: url("../img/intro/intro-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 100%;
     height: 640px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/intro-tablet@2x.jpg");
-      // object-fit: cover;
+      background-image: url("../img/intro/intro-tablet@2x.webp");
       background-size: cover;
     }
   }
 
   @media (max-width: $vp-767) {
-    background-image: url("../img/intro/intro-mobile.jpg");
+    background-image: url("../img/intro/intro-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 100%;
     height: 560px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/intro-mobile@2x.jpg");
-      // object-fit: cover;
+      background-image: url("../img/intro/intro-mobile@2x.webp");
       background-size: cover;
     }
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../img/intro/intro-mobile.jpg");
+    background-image: url("../img/intro/intro-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 320px;
     height: 560px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/intro-mobile@2x.jpg");
-      // object-fit: cover;
+      background-image: url("../img/intro/intro-mobile@2x.webp");
       background-size: cover;
     }
   }
