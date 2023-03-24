@@ -80,26 +80,27 @@
   display: flex;
   flex-direction: row;
   gap: 85px;
+
   padding: 0;
   margin: 0 auto;
 
   list-style: none;
 
-  width: 1220px;
+  max-width: 1220px;
   height: 650px;
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
     gap: 35px;
 
-    width: 670px;
+    max-width: 670px;
     height: 810px;
   }
 
   @media (max-width: $vp-767) {
     gap: 30px;
 
-    width: 270px;
+    max-width: 270px;
     height: 810px;
   }
 }
@@ -123,6 +124,12 @@
 
 
 .catalog__item.catalog__item--accessories {
+  background-image: url("../img/cards/card-accessories-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
   @media (max-width: $vp-1920) {
     background-image: url("../img/cards/card-accessories-desktop.webp");
     background-position: bottom, left top;
@@ -173,6 +180,12 @@
 }
 
 .catalog__item.catalog__item--installation {
+  background-image: url("../img/cards/card-installation-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
   @media (max-width: $vp-1920) {
     background-image: url("../img/cards/card-installation-desktop.webp");
     background-position: bottom, left top;
@@ -223,6 +236,13 @@
 }
 
 .catalog__item.catalog__item--production {
+  background-image: url("../img/cards/card-production-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+
+
   @media (max-width: $vp-1920) {
     background-image: url("../img/cards/card-production-desktop.webp");
     background-position: bottom, left top;
@@ -272,7 +292,7 @@
   }
 }
 
-.catalog__item-link {
+.catalog__item a {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -286,7 +306,13 @@
   }
 }
 
-.catalog__item-title {
+.catalog__item h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
   width: 230px;
   position: absolute;
   content: "";

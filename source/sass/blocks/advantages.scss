@@ -32,7 +32,8 @@
   width: 1222px;
   height: 630px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
+
 
   @media (max-width: $vp-1023) {
     grid-template-columns: 320px 320px;
@@ -127,7 +128,7 @@
 }
 
 
-.advantages__title {
+.advantages__title h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -149,7 +150,7 @@
   }
 }
 
-.advantages__description {
+.advantages__item-wrap p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

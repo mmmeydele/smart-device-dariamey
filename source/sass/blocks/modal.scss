@@ -148,12 +148,12 @@
   margin-bottom: 40px;
 }
 
-.modal__form {
+.modal__form form {
   display: flex;
   flex-direction: column;
 }
 
-.modal__form-field {
+.modal__form-field input {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;
@@ -183,7 +183,7 @@
 }
 
 
-.modal__textarea {
+.modal__textarea textarea {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;

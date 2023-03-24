@@ -805,7 +805,7 @@ button,
   margin-bottom: 40px;
 }
 
-.modal__form {
+.modal__form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,7 +815,7 @@ button,
   flex-direction: column;
 }
 
-.modal__form-field {
+.modal__form-field input {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;
@@ -831,7 +831,7 @@ button,
   padding: 15px;
 }
 
-.modal__form-field::-webkit-input-placeholder {
+.modal__form-field input::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -840,7 +840,7 @@ button,
   color: #ffffff;
 }
 
-.modal__form-field::-moz-placeholder {
+.modal__form-field input::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -849,7 +849,7 @@ button,
   color: #ffffff;
 }
 
-.modal__form-field:-ms-input-placeholder {
+.modal__form-field input:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -858,7 +858,7 @@ button,
   color: #ffffff;
 }
 
-.modal__form-field::-ms-input-placeholder {
+.modal__form-field input::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -867,7 +867,7 @@ button,
   color: #ffffff;
 }
 
-.modal__form-field::placeholder {
+.modal__form-field input::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -876,7 +876,7 @@ button,
   color: #ffffff;
 }
 
-.modal__textarea {
+.modal__textarea textarea {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;
@@ -892,7 +892,7 @@ button,
   padding: 25px 15px;
 }
 
-.modal__textarea::-webkit-input-placeholder {
+.modal__textarea textarea::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -901,7 +901,7 @@ button,
   color: #ffffff;
 }
 
-.modal__textarea::-moz-placeholder {
+.modal__textarea textarea::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -910,7 +910,7 @@ button,
   color: #ffffff;
 }
 
-.modal__textarea:-ms-input-placeholder {
+.modal__textarea textarea:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -919,7 +919,7 @@ button,
   color: #ffffff;
 }
 
-.modal__textarea::-ms-input-placeholder {
+.modal__textarea textarea::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -928,7 +928,7 @@ button,
   color: #ffffff;
 }
 
-.modal__textarea::placeholder {
+.modal__textarea textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1776,7 +1776,7 @@ button,
   width: 1222px;
   height: 630px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
 }
 
 .advantages__item {
@@ -1834,7 +1834,7 @@ button,
   fill: #f2f5f6;
 }
 
-.advantages__title {
+.advantages__title h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1846,11 +1846,11 @@ button,
   padding-top: 20px;
 }
 
-.advantages__title:hover {
+.advantages__title h3:hover {
   color: #f2f5f6;
 }
 
-.advantages__description {
+.advantages__item-wrap p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1861,7 +1861,7 @@ button,
   margin: 0;
 }
 
-.advantages__description:hover {
+.advantages__item-wrap p:hover {
   color: #f2f5f6;
 }
 
@@ -1992,7 +1992,7 @@ button,
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  width: 1220px;
+  max-width: 1220px;
   height: 650px;
 }
 
@@ -2002,7 +2002,31 @@ button,
   position: relative;
 }
 
-.catalog__item-link {
+.catalog__item.catalog__item--accessories {
+  background-image: url("../img/cards/card-accessories-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item.catalog__item--installation {
+  background-image: url("../img/cards/card-installation-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item.catalog__item--production {
+  background-image: url("../img/cards/card-production-desktop.webp");
+  background-position: bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__item a {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2011,7 +2035,12 @@ button,
   color: #ffffff;
 }
 
-.catalog__item-title {
+.catalog__item h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   width: 230px;
   position: absolute;
   content: "";
@@ -2109,7 +2138,7 @@ button,
   margin-bottom: 35px;
 }
 
-.form__call {
+.form__call form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2123,7 +2152,7 @@ button,
   height: 225px;
 }
 
-.form__field {
+.form__field input {
   width: 275px;
   height: 50px;
   background: rgba(4, 20, 39, 0.15);
@@ -2138,7 +2167,7 @@ button,
   padding: 15px;
 }
 
-.form__field::-webkit-input-placeholder {
+.form__field input::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2147,7 +2176,7 @@ button,
   color: #ffffff;
 }
 
-.form__field::-moz-placeholder {
+.form__field input::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2156,7 +2185,7 @@ button,
   color: #ffffff;
 }
 
-.form__field:-ms-input-placeholder {
+.form__field input:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2165,7 +2194,7 @@ button,
   color: #ffffff;
 }
 
-.form__field::-ms-input-placeholder {
+.form__field input::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2174,7 +2203,7 @@ button,
   color: #ffffff;
 }
 
-.form__field::placeholder {
+.form__field input::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2183,15 +2212,15 @@ button,
   color: #ffffff;
 }
 
-.form__field--name {
+.form__field--name input {
   margin-right: 30px;
 }
 
-.form__field--phone {
+.form__field--phone input {
   margin-bottom: 20px;
 }
 
-.form__textarea {
+.form__textarea textarea {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;
@@ -2207,7 +2236,7 @@ button,
   padding: 25px 15px;
 }
 
-.form__textarea::-webkit-input-placeholder {
+.form__textarea textarea::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2216,7 +2245,7 @@ button,
   color: #ffffff;
 }
 
-.form__textarea::-moz-placeholder {
+.form__textarea textarea::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2225,7 +2254,7 @@ button,
   color: #ffffff;
 }
 
-.form__textarea:-ms-input-placeholder {
+.form__textarea textarea:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2234,7 +2263,7 @@ button,
   color: #ffffff;
 }
 
-.form__textarea::-ms-input-placeholder {
+.form__textarea textarea::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2243,7 +2272,7 @@ button,
   color: #ffffff;
 }
 
-.form__textarea::placeholder {
+.form__textarea textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2252,7 +2281,7 @@ button,
   color: #ffffff;
 }
 
-.form__button-submit {
+.form__button-submit button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2423,7 +2452,7 @@ button,
   max-height: 130px;
 }
 
-.site-sections__link {
+.site-sections__item a {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2472,7 +2501,7 @@ button,
   gap: 10px;
 }
 
-.office__address {
+.office__item p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2763,7 +2792,7 @@ button,
     height: 360px;
   }
 
-  .advantages__description {
+  .advantages__item-wrap p {
     width: 245px;
   }
 
@@ -2806,7 +2835,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 35px;
-    width: 670px;
+    max-width: 670px;
     height: 810px;
   }
 
@@ -2861,20 +2890,20 @@ button,
     margin-bottom: 25px;
   }
 
-  .form__call {
+  .form__call form {
     width: 670px;
     height: 305px;
   }
 
-  .form__field {
+  .form__field input {
     width: 320px;
   }
 
-  .form__textarea {
+  .form__textarea textarea {
     width: 670px;
   }
 
-  .form__button-submit {
+  .form__button-submit button {
     margin-right: 85px;
   }
 
@@ -3098,11 +3127,11 @@ button,
     height: 340px;
   }
 
-  .advantages__title {
+  .advantages__title h3 {
     font-size: 20px;
   }
 
-  .advantages__description {
+  .advantages__item-wrap p {
     font-size: 14px;
     width: 210px;
   }
@@ -3155,7 +3184,7 @@ button,
 
   .catalog__list {
     gap: 30px;
-    width: 270px;
+    max-width: 270px;
     height: 810px;
   }
 
@@ -3188,11 +3217,11 @@ button,
     height: 250px;
   }
 
-  .catalog__item-link {
+  .catalog__item a {
     font-size: 18px;
   }
 
-  .catalog__item-title {
+  .catalog__item h3 {
     width: 150px;
     top: 30px;
     left: 30px;
@@ -3230,7 +3259,7 @@ button,
     margin-bottom: 40px;
   }
 
-  .form__call {
+  .form__call form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3239,20 +3268,20 @@ button,
     height: 450px;
   }
 
-  .form__field {
+  .form__field input {
     width: 270px;
   }
 
-  .form__field--name {
+  .form__field--name input {
     margin-bottom: 20px;
   }
 
-  .form__textarea {
+  .form__textarea textarea {
     width: 270px;
     margin-bottom: 30px;
   }
 
-  .form__button-submit {
+  .form__button-submit button {
     width: 270px;
     margin-bottom: 25px;
   }
