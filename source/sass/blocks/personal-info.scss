@@ -10,7 +10,7 @@
   content: "";
 }
 
-.personal-info__checkbox[type="checkbox"]:checked+.personal-info__control {
+.personal-info__checkbox[type="checkbox"]:checked + .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
   background-color: #00b3ff;
@@ -20,7 +20,7 @@
 }
 
 
-.personal-info__checkbox[type="checkbox"]:checked+.personal-info__control::before {
+.personal-info__checkbox[type="checkbox"]:checked + .personal-info__control::before {
   position: absolute;
   top: 4px;
   left: 2px;

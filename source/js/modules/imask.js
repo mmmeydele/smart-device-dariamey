@@ -14,4 +14,4 @@ const modalMask = new IMask(modalPhone, {
 });
 
 
-export { phoneMask, modalMask };
+export {phoneMask, modalMask};

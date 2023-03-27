@@ -1,10 +1,12 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { phoneMask, modalMask } from './modules/imask';
-import { aboutFull, aboutCollapse } from './modules/about-block';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
 
-import { initAccordions, accordions } from './modules/init-accordion';
+/* eslint-disable */
+import {phoneMask, modalMask} from './modules/imask';
+import {aboutFull, aboutCollapse} from './modules/about-block';
+import {initAccordions, accordions} from './modules/init-accordion';
+/* eslint-enable */
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {

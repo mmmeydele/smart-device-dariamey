@@ -15,4 +15,4 @@ const aboutCollapse = btnCollapse.addEventListener('click', function () {
 });
 
 
-export { aboutFull, aboutCollapse };
+export {aboutFull, aboutCollapse};

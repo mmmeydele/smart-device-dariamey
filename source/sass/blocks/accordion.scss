@@ -11,7 +11,6 @@
 
 .accordion__toggle.accordion__toggle--closed {
   @media (max-width: $vp-767) {
-
     &::before,
     &::after {
       content: "";
@@ -31,7 +30,6 @@
 
 .accordion__toggle.accordion__toggle--opened {
   @media (max-width: $vp-767) {
-
     &::before,
     &::after {
       content: "";
@@ -45,9 +43,8 @@
   }
 }
 
-.accordion__element.is-active>.accordion__button .accordion__toggle--closed {
+.accordion__element.is-active > .accordion__button .accordion__toggle--closed {
   @media (max-width: $vp-767) {
-
     &::before,
     &::after {
       display: none;
@@ -55,9 +52,8 @@
   }
 }
 
-.accordion__element.is-active>.accordion__button .accordion__toggle--opened {
+.accordion__element.is-active > .accordion__button .accordion__toggle--opened {
   @media (max-width: $vp-767) {
-
     &::before,
     &::after {
       content: "";
