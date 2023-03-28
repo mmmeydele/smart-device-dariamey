@@ -1,8 +1,8 @@
 .advantages {
   width: 100%;
-  max-width: 1920px;
+
   margin: 0 auto;
-  height: 870px;
+  min-height: 870px;
   padding: 120px 15px;
 
   display: flex;
@@ -11,36 +11,35 @@
 
   @media (max-width: $vp-1023) {
     max-width: 767px;
-    height: 910px;
+    min-height: 910px;
     padding: 80px 15px;
   }
 
   @media (max-width: $vp-767) {
     max-width: 320px;
-    height: 1520px;
+    min-height: 1520px;
     padding: 50px 25px;
   }
 }
 
 .advantages__list {
   display: grid;
-  grid-template-columns: 595px 595px;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 
   list-style: none;
 
-  width: 1222px;
-  height: 630px;
+  max-width: 1222px;
+  min-height: 630px;
   margin: 0 auto;
   padding: 0;
 
 
   @media (max-width: $vp-1023) {
-    grid-template-columns: 320px 320px;
     gap: 30px;
 
     max-width: 670px;
-    height: 750px;
+    min-height: 750px;
   }
 
   @media (max-width: $vp-767) {
@@ -54,14 +53,14 @@
 
 .advantages__item {
   border: 1px solid #ebebeb;
-  height: 300px;
+  min-height: 300px;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
     width: 5px;
-    height: 296px;
+    height: 100%;
     left: 0;
     background: #00b2ff;
   }
@@ -72,19 +71,19 @@
   }
 
   @media (max-width: $vp-1023) {
-    height: 360px;
+    min-height: 360px;
 
     &::before {
-      height: 358px;
+      height: 100%;
     }
   }
 
   @media (max-width: $vp-767) {
-    width: 270px;
-    height: 340px;
+    max-width: 270px;
+    min-height: 340px;
 
     &::before {
-      height: 338px;
+      height: 100%;
     }
   }
 }
@@ -104,12 +103,12 @@
   padding: 40px 45px 35px;
 
   @media (max-width: $vp-1023) {
-    height: 360px;
+    min-height: 360px;
   }
 
   @media (max-width: $vp-767) {
-    width: 270px;
-    height: 340px;
+    max-width: 270px;
+    min-height: 340px;
   }
 }
 
@@ -159,7 +158,7 @@
 
   color: #041827;
 
-  width: 505px;
+  max-width: 505px;
   margin: 0;
 
   &:hover {
@@ -167,11 +166,11 @@
   }
 
   @media (max-width: $vp-1023) {
-    width: 245px;
+    max-width: 245px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 14px;
-    width: 210px;
+    max-width: 210px;
   }
 }

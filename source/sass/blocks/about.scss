@@ -4,7 +4,7 @@
   align-items: center;
 
   width: 100%;
-  max-width: 1920px;
+
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 100px;
@@ -74,15 +74,15 @@
 
   margin: 0;
   margin-top: 15px;
-  width: 970px;
+  max-width: 970px;
 
   @media (max-width: $vp-1023) {
-    width: 495px;
+    max-width: 495px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 14px;
-    width: 270px;
+    max-width: 270px;
   }
 }
 

@@ -19,8 +19,7 @@
 <body>
   <div class="wrapper page-container">
     <header class="main-header">
-      <div class="container main-header__wrap main-header__wrap--fixed">
-        <div class="main-header__container">
+      <div class="main-header__wrap container">
           <a class="main-header__logo logo logo--none" href="index.html">
             <img class="logo__image" src="img/svg/logo.svg" width="55" height="55" alt="Логотип сайта">
             <div class="logo__text">
@@ -31,7 +30,7 @@
 
           <ul class="main-header__contacts contacts">
             <li class="main-header__contacts-email contacts__email">
-              <a class="contacts__email-link" href="#">
+              <a class="contacts__email-link" href="mailto:@info@sd.ru" aria-label="Написать нам">
                 <svg class="contacts__email-link-icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
                 </svg>
@@ -49,7 +48,7 @@
           </ul>
 
           <button class="main-header__button btn" data-open-modal="call">Заказать звонок</button>
-        </div>
+
 
       </div>
     </header>
@@ -58,7 +57,7 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Интро</h2>
-        <div class="intro__wrap">
+        <div class="container intro__wrap">
           <p class="intro__title">Печатные платы</p>
           <p class="intro__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="intro__button" href="#form">Получить бесплатную консультацию</a>
@@ -68,61 +67,64 @@
 
       <section class="advantages">
         <h2 class="advantages__section-title visually-hidden">Преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__item-wrap">
-              <svg class="advantages__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#icon-stopwatch"></use>
-              </svg>
-              <div class="advantages__title advantages__title--speed">
-                <h3>Оперативные сроки</h3>
-              </div>
+        <div class="container">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-wrap">
+                <svg class="advantages__icon" width="35" height="35">
+                  <use xlink:href="img/sprite.svg#icon-stopwatch"></use>
+                </svg>
+                <div class="advantages__title advantages__title--speed">
+                  <h3>Оперативные сроки</h3>
+                </div>
 
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать
-                стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__item-wrap">
-              <svg class="advantages__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#icon-vendors"></use>
-              </svg>
-              <div class="advantages__title advantages__title--vendors">
-                <h3>Крупные поставщики</h3>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать
+                  стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </div>
-              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
-                CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей
-                продукции.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__item-wrap">
-              <svg class="advantages__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#icon-confidentiality"></use>
-              </svg>
-              <div class="advantages__title advantages__title--confindentiality">
-                <h3>Полная конфиденциальность</h3>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-wrap">
+                <svg class="advantages__icon" width="35" height="35">
+                  <use xlink:href="img/sprite.svg#icon-vendors"></use>
+                </svg>
+                <div class="advantages__title advantages__title--vendors">
+                  <h3>Крупные поставщики</h3>
+                </div>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
+                  CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей
+                  продукции.</p>
               </div>
-              <p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__item-wrap">
-              <svg class="advantages__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#icon-tag"></use>
-              </svg>
-              <div class="advantages__title advantages__title--cost">
-                <h3>Персонализация стоимости</h3>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-wrap">
+                <svg class="advantages__icon" width="35" height="35">
+                  <use xlink:href="img/sprite.svg#icon-confidentiality"></use>
+                </svg>
+                <div class="advantages__title advantages__title--confindentiality">
+                  <h3>Полная конфиденциальность</h3>
+                </div>
+                <p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
               </div>
-              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-                установить ту цену, которая Вас устраивает.</p>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-wrap">
+                <svg class="advantages__icon" width="35" height="35">
+                  <use xlink:href="img/sprite.svg#icon-tag"></use>
+                </svg>
+                <div class="advantages__title advantages__title--cost">
+                  <h3>Персонализация стоимости</h3>
+                </div>
+                <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+                  установить ту цену, которая Вас устраивает.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </section>
 
       <section class="about">
-        <div class="about__wrap">
+        <div class="container about__wrap">
           <h2 class="about__title">О компании</h2>
           <div class="about__description">
             <p>Мы поставляем электронные комплектующие, производим печатные платы и
@@ -152,6 +154,7 @@
       </section>
 
       <section class="catalog">
+        <div class="container">
         <h2 class="catalog__title">Smart Device предлагает следующие товары и услуги</h2>
         <p class="catalog__title catalog__title--mobile">Товары и услуги Smart Device</p>
         <ul class="catalog__list">
@@ -186,6 +189,8 @@
             </a>
           </li>
         </ul>
+        </div>
+
       </section>
 
       <section class="form" id="form">
@@ -227,7 +232,7 @@
 
     </main>
     <footer class="main-footer">
-      <div class="container main-footer__wrap">
+      <div class="main-footer__wrap container">
 
         <div class="main-footer__logo-socials">
           <a class="main-footer__logo logo logo--none" href="index.html">

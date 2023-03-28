@@ -3,17 +3,17 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  width: 215px;
-  height: 55px;
+  max-width: 215px;
+  min-height: 55px;
 
   @media (max-width: $vp-767) {
-    height: 35px;
+    min-height: 35px;
   }
 }
 
 .logo__image {
   @media (max-width: $vp-767) {
-    height: 35px;
+    min-height: 35px;
     width: 35px;
   }
 }

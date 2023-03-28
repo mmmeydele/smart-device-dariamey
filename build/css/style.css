@@ -630,10 +630,9 @@ button,
 }
 
 .container {
-  width: 100%;
-  max-width: 1222px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 .btn {
@@ -1496,31 +1495,19 @@ button,
 }
 
 .main-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   width: 100%;
-  max-width: 1920px;
+  min-height: 120px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.main-header__wrap--fixed {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
 }
 
 .main-header__wrap {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
-  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1534,28 +1521,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1920px;
+  min-height: 120px;
   margin: 0 auto;
   padding: 25px 30px;
-}
-
-.main-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1220px;
 }
 
 .main-header__button {
@@ -1584,8 +1552,8 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 215px;
-  height: 55px;
+  max-width: 215px;
+  min-height: 55px;
 }
 
 .logo__text {
@@ -1687,7 +1655,7 @@ button,
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
   width: 100%;
-  height: 880px;
+  min-height: 880px;
   position: relative;
 }
 
@@ -1750,9 +1718,8 @@ button,
 
 .advantages {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  height: 870px;
+  min-height: 870px;
   padding: 120px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1769,19 +1736,19 @@ button,
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 595px 595px;
-  grid-template-columns: 595px 595px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   list-style: none;
-  width: 1222px;
-  height: 630px;
+  max-width: 1222px;
+  min-height: 630px;
   margin: 0 auto;
   padding: 0;
 }
 
 .advantages__item {
   border: 1px solid #ebebeb;
-  height: 300px;
+  min-height: 300px;
   position: relative;
 }
 
@@ -1789,7 +1756,7 @@ button,
   position: absolute;
   content: "";
   width: 5px;
-  height: 296px;
+  height: 100%;
   left: 0;
   background: #00b2ff;
 }
@@ -1857,7 +1824,7 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: #041827;
-  width: 505px;
+  max-width: 505px;
   margin: 0;
 }
 
@@ -1877,7 +1844,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 100px;
@@ -1922,7 +1888,7 @@ button,
   color: #041827;
   margin: 0;
   margin-top: 15px;
-  width: 970px;
+  max-width: 970px;
 }
 
 .about__button {
@@ -1943,9 +1909,8 @@ button,
 }
 
 .catalog {
-  height: 960px;
+  min-height: 960px;
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 140px;
@@ -1971,7 +1936,6 @@ button,
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -1992,13 +1956,13 @@ button,
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  max-width: 1220px;
-  height: 650px;
+  max-width: 1222px;
+  min-height: 650px;
 }
 
 .catalog__item {
-  width: 350px;
-  height: 650px;
+  width: 100%;
+  min-height: 650px;
   position: relative;
 }
 
@@ -2006,7 +1970,7 @@ button,
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 }
 
@@ -2014,7 +1978,7 @@ button,
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 }
 
@@ -2022,7 +1986,7 @@ button,
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 }
 
@@ -2041,7 +2005,7 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  width: 230px;
+  max-width: 230px;
   position: absolute;
   content: "";
   top: 50px;
@@ -2077,8 +2041,7 @@ button,
   padding-top: 170px;
   padding-bottom: 250px;
   width: 100%;
-  max-width: 1920px;
-  height: 840px;
+  min-height: 840px;
   position: relative;
   background: #00b3ff;
 }
@@ -2102,18 +2065,19 @@ button,
   width: 510px;
   height: 285px;
   top: 246px;
-  right: 1000px;
+  left: 5%;
   background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
 }
 
 .form__wrap {
-  width: 585px;
-  height: 420px;
+  max-width: 585px;
+  min-height: 420px;
+  margin: 0 auto;
   position: absolute;
   content: "";
   top: 170px;
-  right: 15%;
+  right: 30%;
 }
 
 .form__title {
@@ -2333,7 +2297,6 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  max-width: 1920px;
   background: #041827;
   color: #ffffff;
 }
@@ -2585,7 +2548,6 @@ button,
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  max-width: 1920px;
 }
 
 /* @mixin hover-focus {
@@ -2649,7 +2611,7 @@ button,
 
 @media (min-width: 1024px) {
   .contacts {
-    width: 480px;
+    min-width: 480px;
   }
 
   .contacts__email-text {
@@ -2666,7 +2628,7 @@ button,
     background-image: url("../img/cards/card-accessories-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 
@@ -2674,7 +2636,7 @@ button,
     background-image: url("../img/cards/card-installation-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 
@@ -2682,7 +2644,7 @@ button,
     background-image: url("../img/cards/card-production-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 }
@@ -2692,7 +2654,7 @@ button,
     background-image: url("../img/cards/card-accessories-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 
@@ -2700,7 +2662,7 @@ button,
     background-image: url("../img/cards/card-installation-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 
@@ -2708,23 +2670,28 @@ button,
     background-image: url("../img/cards/card-production-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
   }
 }
 
 @media (max-width: 1023px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .main-header {
+    position: absolute;
+    min-height: 100px;
+  }
+
   .main-header__wrap {
-    width: 100%;
     padding: 22px 25px;
+    min-height: 100px;
   }
 
   .main-header__button-wrap {
     display: none;
-  }
-
-  .main-header__container {
-    width: 650px;
   }
 
   .main-header__button {
@@ -2748,7 +2715,7 @@ button,
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 100%;
-    height: 640px;
+    min-height: 640px;
   }
 
   .intro__title {
@@ -2768,32 +2735,30 @@ button,
 
   .advantages {
     max-width: 767px;
-    height: 910px;
+    min-height: 910px;
     padding: 80px 15px;
   }
 
   .advantages__list {
-    -ms-grid-columns: 320px 320px;
-    grid-template-columns: 320px 320px;
     gap: 30px;
     max-width: 670px;
-    height: 750px;
+    min-height: 750px;
   }
 
   .advantages__item {
-    height: 360px;
+    min-height: 360px;
   }
 
   .advantages__item::before {
-    height: 358px;
+    height: 100%;
   }
 
   .advantages__item-wrap {
-    height: 360px;
+    min-height: 360px;
   }
 
   .advantages__item-wrap p {
-    width: 245px;
+    max-width: 245px;
   }
 
   .about {
@@ -2805,7 +2770,7 @@ button,
   }
 
   .about__description {
-    width: 495px;
+    max-width: 495px;
   }
 
   .about__button {
@@ -2814,7 +2779,7 @@ button,
 
   .catalog {
     max-width: 1023px;
-    height: 1080px;
+    min-height: 1080px;
     padding-top: 60px;
     padding-bottom: 75px;
     padding-left: 50px;
@@ -2822,7 +2787,7 @@ button,
   }
 
   .catalog__title {
-    width: 670px;
+    max-width: 670px;
   }
 
   .catalog__title.catalog__title--mobile {
@@ -2836,19 +2801,18 @@ button,
     flex-direction: column;
     gap: 35px;
     max-width: 670px;
-    height: 810px;
+    min-height: 810px;
   }
 
   .catalog__item {
-    width: 670px;
-    height: 250px;
+    min-height: 250px;
   }
 
   .catalog__item.catalog__item--accessories {
     background-image: url("../img/cards/card-accessories-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2856,7 +2820,7 @@ button,
     background-image: url("../img/cards/card-installation-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2864,12 +2828,12 @@ button,
     background-image: url("../img/cards/card-production-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 
   .form {
-    height: 580px;
+    min-height: 580px;
     padding-top: 50px;
     padding-bottom: 125px;
   }
@@ -2882,8 +2846,8 @@ button,
   .form__wrap {
     position: static;
     margin: 0 auto;
-    width: 670px;
-    height: 405px;
+    max-width: 670px;
+    min-height: 405px;
   }
 
   .form__description {
@@ -2985,7 +2949,7 @@ button,
     background-image: url("../img/cards/card-accessories-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2993,7 +2957,7 @@ button,
     background-image: url("../img/cards/card-installation-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3001,18 +2965,17 @@ button,
     background-image: url("../img/cards/card-production-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
-  }
-}
-
 @media (max-width: 767px) {
+  .container {
+    padding: 0 25px;
+    min-width: 320px;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -3028,23 +2991,21 @@ button,
 
   .main-header {
     padding: 0 50px;
+    min-width: 320px;
+    min-height: 70px;
   }
 
   .main-header__wrap {
-    width: 100%;
     padding: 9px 15px;
-  }
-
-  .main-header__container {
-    width: 260px;
+    min-height: 70px;
   }
 
   .logo {
-    height: 35px;
+    min-height: 35px;
   }
 
   .logo__image {
-    height: 35px;
+    min-height: 35px;
     width: 35px;
   }
 
@@ -3057,7 +3018,7 @@ button,
   }
 
   .contacts {
-    width: 100px;
+    min-width: 100px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
@@ -3067,7 +3028,7 @@ button,
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 100%;
-    height: 560px;
+    min-height: 560px;
   }
 
   .intro__title {
@@ -3097,7 +3058,7 @@ button,
 
   .advantages {
     max-width: 320px;
-    height: 1520px;
+    min-height: 1520px;
     padding: 50px 25px;
   }
 
@@ -3114,17 +3075,17 @@ button,
   }
 
   .advantages__item {
-    width: 270px;
-    height: 340px;
+    max-width: 270px;
+    min-height: 340px;
   }
 
   .advantages__item::before {
-    height: 338px;
+    height: 100%;
   }
 
   .advantages__item-wrap {
-    width: 270px;
-    height: 340px;
+    max-width: 270px;
+    min-height: 340px;
   }
 
   .advantages__title h3 {
@@ -3133,7 +3094,7 @@ button,
 
   .advantages__item-wrap p {
     font-size: 14px;
-    width: 210px;
+    max-width: 210px;
   }
 
   .about {
@@ -3154,7 +3115,7 @@ button,
 
   .about__description {
     font-size: 14px;
-    width: 270px;
+    max-width: 270px;
   }
 
   .about__button {
@@ -3163,7 +3124,7 @@ button,
 
   .catalog {
     max-width: 767px;
-    height: 1050px;
+    min-height: 1050px;
     padding-top: 50px;
     padding-bottom: 86px;
     padding-left: 25px;
@@ -3185,19 +3146,18 @@ button,
   .catalog__list {
     gap: 30px;
     max-width: 270px;
-    height: 810px;
+    min-height: 810px;
   }
 
   .catalog__item {
-    width: 270px;
-    height: 250px;
+    min-height: 250px;
   }
 
   .catalog__item.catalog__item--accessories {
     background-image: url("../img/cards/card-accessories-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3205,7 +3165,7 @@ button,
     background-image: url("../img/cards/card-installation-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3213,7 +3173,7 @@ button,
     background-image: url("../img/cards/card-production-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3222,7 +3182,7 @@ button,
   }
 
   .catalog__item h3 {
-    width: 150px;
+    max-width: 150px;
     top: 30px;
     left: 30px;
   }
@@ -3238,13 +3198,13 @@ button,
   }
 
   .form {
-    height: 750px;
+    min-height: 750px;
     padding-bottom: 90px;
   }
 
   .form__wrap {
-    width: 270px;
-    height: 610px;
+    max-width: 270px;
+    min-height: 610px;
   }
 
   .form__title {
@@ -3531,7 +3491,7 @@ button,
     background-image: url("../img/cards/card-accessories-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3539,7 +3499,7 @@ button,
     background-image: url("../img/cards/card-installation-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -3547,7 +3507,7 @@ button,
     background-image: url("../img/cards/card-production-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 }
@@ -3574,7 +3534,7 @@ button,
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
     width: 320px;
-    height: 560px;
+    min-height: 560px;
   }
 
   .catalog {

@@ -1,7 +1,7 @@
 .catalog {
-  height: 960px;
+  min-height: 960px;
   width: 100%;
-  max-width: 1920px;
+
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 140px;
@@ -16,7 +16,7 @@
 
   @media (max-width: $vp-1023) {
     max-width: 1023px;
-    height: 1080px;
+    min-height: 1080px;
     padding-top: 60px;
     padding-bottom: 75px;
     padding-left: 50px;
@@ -25,7 +25,7 @@
 
   @media (max-width: $vp-767) {
     max-width: 767px;
-    height: 1050px;
+    min-height: 1050px;
     padding-top: 50px;
     padding-bottom: 86px;
     padding-left: 25px;
@@ -47,12 +47,11 @@
 
   color: #ffffff;
 
-  width: 1200px;
   margin: 0 auto;
   margin-bottom: 50px;
 
   @media (max-width: $vp-1023) {
-    width: 670px;
+    max-width: 670px;
   }
 
   @media (max-width: $vp-767) {
@@ -86,39 +85,37 @@
 
   list-style: none;
 
-  max-width: 1220px;
-  height: 650px;
+  max-width: 1222px;
+  min-height: 650px;
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
     gap: 35px;
 
     max-width: 670px;
-    height: 810px;
+    min-height: 810px;
   }
 
   @media (max-width: $vp-767) {
     gap: 30px;
 
     max-width: 270px;
-    height: 810px;
+    min-height: 810px;
   }
 }
 
 .catalog__item {
-  width: 350px;
-  height: 650px;
+  width: 100%;
+  min-height: 650px;
 
   position: relative;
 
   @media (max-width: $vp-1023) {
-    width: 670px;
-    height: 250px;
+    min-height: 250px;
   }
 
   @media (max-width: $vp-767) {
-    width: 270px;
-    height: 250px;
+    min-height: 250px;
   }
 }
 
@@ -127,21 +124,21 @@
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 
   @media (max-width: $vp-1920) {
     background-image: url("../img/cards/card-accessories-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-accessories-desktop@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 350px;
+      width: 100%;
       height: 650px;
     }
   }
@@ -150,14 +147,14 @@
     background-image: url("../img/cards/card-accessories-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-accessories-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -166,14 +163,14 @@
     background-image: url("../img/cards/card-accessories-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-accessories-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -183,21 +180,21 @@
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 
   @media (max-width: $vp-1920) {
     background-image: url("../img/cards/card-installation-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-installation-desktop@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 350px;
+      width: 100%;
       height: 650px;
     }
   }
@@ -206,14 +203,14 @@
     background-image: url("../img/cards/card-installation-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-installation-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -222,14 +219,14 @@
     background-image: url("../img/cards/card-installation-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-installation-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -239,7 +236,7 @@
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
+  width: 100%;
   height: 650px;
 
 
@@ -247,14 +244,14 @@
     background-image: url("../img/cards/card-production-desktop.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
+    width: 100%;
     height: 650px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-production-desktop@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 350px;
+      width: 100%;
       height: 650px;
     }
   }
@@ -263,14 +260,14 @@
     background-image: url("../img/cards/card-production-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-production-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -279,14 +276,14 @@
     background-image: url("../img/cards/card-production-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
+    width: 100%;
     height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-production-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
+      width: 100%;
       height: 250px;
     }
   }
@@ -313,14 +310,14 @@
   font-size: 20px;
   line-height: 30px;
 
-  width: 230px;
+  max-width: 230px;
   position: absolute;
   content: "";
   top: 50px;
   left: 40px;
 
   @media (max-width: $vp-767) {
-    width: 150px;
+    max-width: 150px;
     top: 30px;
     left: 30px;
   }
