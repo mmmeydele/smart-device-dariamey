@@ -35,11 +35,15 @@
   }
 
   @media (max-width: $vp-1023) {
+    max-width: 1023px;
     min-height: 580px;
     padding-top: 50px;
     padding-bottom: 125px;
 
-    &::before,
+    &::before {
+      display: none;
+    }
+
     &::after {
       display: none;
     }
@@ -48,6 +52,11 @@
   @media (max-width: $vp-767) {
     min-height: 750px;
     padding-bottom: 90px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 

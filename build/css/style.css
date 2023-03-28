@@ -1945,23 +1945,17 @@ button,
 }
 
 .catalog__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 85px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  max-width: 1222px;
-  min-height: 650px;
 }
 
 .catalog__item {
-  width: 100%;
   min-height: 650px;
   position: relative;
 }
@@ -2623,58 +2617,6 @@ button,
   }
 }
 
-@media (max-width: 1920px) {
-  .catalog__item.catalog__item--accessories {
-    background-image: url("../img/cards/card-accessories-desktop.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-
-  .catalog__item.catalog__item--installation {
-    background-image: url("../img/cards/card-installation-desktop.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-
-  .catalog__item.catalog__item--production {
-    background-image: url("../img/cards/card-production-desktop.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-}
-
-@media (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1920px) and (min-resolution: 2dppx) {
-  .catalog__item.catalog__item--accessories {
-    background-image: url("../img/cards/card-accessories-desktop@2x.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-
-  .catalog__item.catalog__item--installation {
-    background-image: url("../img/cards/card-installation-desktop@2x.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-
-  .catalog__item.catalog__item--production {
-    background-image: url("../img/cards/card-production-desktop@2x.webp");
-    background-position: bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    height: 650px;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
@@ -2736,7 +2678,7 @@ button,
   .advantages {
     max-width: 767px;
     min-height: 910px;
-    padding: 80px 15px;
+    padding: 80px 0;
   }
 
   .advantages__list {
@@ -2795,6 +2737,9 @@ button,
   }
 
   .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2833,12 +2778,16 @@ button,
   }
 
   .form {
+    max-width: 1023px;
     min-height: 580px;
     padding-top: 50px;
     padding-bottom: 125px;
   }
 
-  .form::before,
+  .form::before {
+    display: none;
+  }
+
   .form::after {
     display: none;
   }
@@ -2973,7 +2922,7 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 25px;
-    min-width: 320px;
+    width: 320px;
   }
 
   .modal__wrapper {
@@ -3059,7 +3008,7 @@ button,
   .advantages {
     max-width: 320px;
     min-height: 1520px;
-    padding: 50px 25px;
+    padding: 50px 0;
   }
 
   .advantages__list {
@@ -3138,7 +3087,7 @@ button,
   .catalog__title.catalog__title--mobile {
     display: inline-block;
     font-size: 28px;
-    width: 270px;
+    max-width: 270px;
     height: 64px;
     margin-bottom: 40px;
   }
@@ -3200,6 +3149,11 @@ button,
   .form {
     min-height: 750px;
     padding-bottom: 90px;
+  }
+
+  .form::before,
+  .form::after {
+    display: none;
   }
 
   .form__wrap {
