@@ -2326,6 +2326,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 30px;
+  margin-right: 50px;
 }
 
 .main-footer__site-office {
@@ -2846,6 +2847,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     width: 768px;
+    margin-right: 0;
   }
 
   .main-footer__site-office {
@@ -3088,7 +3090,7 @@ button,
     display: inline-block;
     font-size: 28px;
     max-width: 270px;
-    height: 64px;
+    min-height: 64px;
     margin-bottom: 40px;
   }
 
