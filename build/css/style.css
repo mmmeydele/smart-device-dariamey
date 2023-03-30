@@ -2189,16 +2189,14 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border-color: transparent;
+  width: 580px;
+  height: 155px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  width: 580px;
-  height: 155px;
-  margin-bottom: 35px;
-  padding: 25px 15px;
 }
 
 .form__textarea textarea::-webkit-input-placeholder {
