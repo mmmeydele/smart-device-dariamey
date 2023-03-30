@@ -643,7 +643,6 @@ button,
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
-  position: relative;
 }
 
 .btn {
@@ -1534,7 +1533,7 @@ button,
   justify-content: space-between;
   min-height: 120px;
   margin: 0 auto;
-  padding: 25px 30px;
+  padding: 25px 40px;
 }
 
 .main-header__button {
@@ -1731,7 +1730,7 @@ button,
   width: 100%;
   margin: 0 auto;
   min-height: 870px;
-  padding: 120px 15px;
+  padding: 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1856,7 +1855,7 @@ button,
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
   padding-bottom: 100px;
 }
 
@@ -1925,8 +1924,6 @@ button,
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 140px;
-  padding-left: 25px;
-  padding-right: 25px;
   background-color: #041827;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2072,7 +2069,7 @@ button,
   width: 510px;
   height: 285px;
   top: 246px;
-  left: 10%;
+  left: 12%;
   background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
 }
@@ -2081,9 +2078,7 @@ button,
   max-width: 585px;
   min-height: 420px;
   margin: 0 auto;
-  position: absolute;
-  content: "";
-  right: 25px;
+  padding-left: 250px;
 }
 
 .form__title {
@@ -2791,8 +2786,23 @@ button,
     height: 250px;
   }
 
+  .form {
+    max-width: 1023px;
+    min-height: 580px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  .form::before {
+    display: none;
+  }
+
+  .form::after {
+    display: none;
+  }
+
   .form__wrap {
-    position: static;
+    padding-left: 0;
     margin: 0 auto;
     max-width: 670px;
     min-height: 405px;
@@ -3504,23 +3514,6 @@ button,
   .intro {
     background-image: url("../img/intro/intro-mobile@2x.webp");
     background-size: cover;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .form {
-    max-width: 1023px;
-    min-height: 580px;
-    padding-top: 50px;
-    padding-bottom: 125px;
-  }
-
-  .form::before {
-    display: none;
-  }
-
-  .form::after {
-    display: none;
   }
 }
 

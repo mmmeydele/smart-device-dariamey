@@ -28,13 +28,13 @@
     width: 510px;
     height: 285px;
     top: 246px;
-    left: 10%;
+    left: 12%;
 
     background-image: url("../img/paper-airplane.png");
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $vp-768) and (max-width: $vp-1023) {
+  @media (max-width: $vp-1023) {
     max-width: 1023px;
     min-height: 580px;
     padding-top: 50px;
@@ -65,12 +65,10 @@
   min-height: 420px;
   margin: 0 auto;
 
-  position: absolute;
-  content: "";
-  right: 25px;
+  padding-left: 250px;
 
   @media (max-width: $vp-1023) {
-    position: static;
+    padding-left: 0;
     margin: 0 auto;
 
     max-width: 670px;
