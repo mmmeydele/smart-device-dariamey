@@ -643,6 +643,7 @@ button,
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
+  position: relative;
 }
 
 .btn {
@@ -2071,7 +2072,7 @@ button,
   width: 510px;
   height: 285px;
   top: 246px;
-  left: 5%;
+  left: 10%;
   background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
 }
@@ -2082,8 +2083,7 @@ button,
   margin: 0 auto;
   position: absolute;
   content: "";
-  top: 170px;
-  right: 30%;
+  right: 25px;
 }
 
 .form__title {
