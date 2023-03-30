@@ -34,7 +34,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: $vp-1023) {
+  @media (min-width: $vp-768) and (max-width: $vp-1023) {
     max-width: 1023px;
     min-height: 580px;
     padding-top: 50px;
