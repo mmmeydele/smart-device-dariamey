@@ -1,3 +1,26 @@
+form {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 510px;
+    height: 285px;
+    top: 0;
+    right: 112%;
+
+    background-image: url("../img/paper-airplane.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $vp-1023) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
 .form {
   margin: 0 auto;
   padding-top: 170px;
@@ -22,17 +45,6 @@
     transform: rotate(-53.1deg);
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 510px;
-    height: 285px;
-    top: 246px;
-    left: 12%;
-
-    background-image: url("../img/paper-airplane.png");
-    background-repeat: no-repeat;
-  }
 
   @media (max-width: $vp-1023) {
     max-width: 1023px;

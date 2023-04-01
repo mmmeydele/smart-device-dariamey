@@ -124,30 +124,23 @@
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
-  height: 650px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cards/card-accessories-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
-    height: 650px;
   }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/cards/card-accessories-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
-    height: 250px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-accessories-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
-      height: 250px;
     }
   }
 
@@ -155,15 +148,11 @@
     background-image: url("../img/cards/card-accessories-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
-    height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-accessories-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
-      height: 250px;
     }
   }
 }
@@ -172,30 +161,22 @@
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  width: 350px;
-  height: 650px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cards/card-installation-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
-    height: 650px;
   }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/cards/card-installation-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
-    height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-installation-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
-      height: 250px;
     }
   }
 
@@ -203,15 +184,11 @@
     background-image: url("../img/cards/card-installation-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
-    height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-installation-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
-      height: 250px;
     }
   }
 }
@@ -219,31 +196,22 @@
 .catalog__item.catalog__item--production {
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
-  background-repeat: no-repeat, no-repeat;
-  width: 350px;
-  height: 650px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/cards/card-production-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 350px;
-    height: 650px;
   }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/cards/card-production-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 670px;
-    height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-production-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 670px;
-      height: 250px;
     }
   }
 
@@ -251,15 +219,11 @@
     background-image: url("../img/cards/card-production-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
-    width: 270px;
-    height: 250px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cards/card-production-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
-      width: 270px;
-      height: 250px;
     }
   }
 }
