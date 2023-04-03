@@ -1654,9 +1654,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1678,12 +1675,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  max-width: 720px;
+  min-height: 295px;
+  padding: 0;
+  margin: 0;
+  margin-left: 28%;
 }
 
-.intro__title {
+.intro__title p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1696,7 +1695,7 @@ button,
   margin-bottom: 40px;
 }
 
-.intro__description {
+.intro__description p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2665,13 +2664,13 @@ form::after {
     min-height: 640px;
   }
 
-  .intro__title {
+  .intro__title p {
     font-size: 64px;
     line-height: 75px;
     margin-bottom: 20px;
   }
 
-  .intro__description {
+  .intro__description p {
     width: 670px;
     margin-bottom: 50px;
   }
@@ -2714,6 +2713,7 @@ form::after {
 
   .about__wrap {
     padding-left: 180px;
+    padding-right: 0;
   }
 
   .about__description {
@@ -2978,14 +2978,14 @@ form::after {
     min-height: 560px;
   }
 
-  .intro__title {
+  .intro__title p {
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 20px;
     width: 270px;
   }
 
-  .intro__description {
+  .intro__description p {
     font-size: 14px;
     line-height: 155%;
     width: 270px;
@@ -3490,6 +3490,14 @@ form::after {
   .intro {
     background-image: url("../img/intro/intro-mobile@2x.webp");
     background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .intro__wrap {
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
