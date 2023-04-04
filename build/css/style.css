@@ -1928,17 +1928,20 @@ button,
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
+  background-color: #041827;
 }
 
 .catalog__item.catalog__item--installation {
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
+  background-color: #041827;
 }
 
 .catalog__item.catalog__item--production {
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
+  background-color: #041827;
 }
 
 .catalog__item a {
@@ -2148,6 +2151,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  padding: 15px;
 }
 
 .form__textarea textarea::-webkit-input-placeholder {
