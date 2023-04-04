@@ -1553,53 +1553,8 @@ button,
   padding: 10px 15px;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  max-width: 215px;
-  min-height: 55px;
-}
-
-.logo__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.logo__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  color: #f2f5f7;
-  margin: 0;
-  padding-left: 15px;
-}
-
-.logo__description {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-  padding-left: 15px;
+.logo--mobile {
+  display: none;
 }
 
 .contacts {
@@ -1874,7 +1829,7 @@ button,
 .about__wrap::before {
   position: absolute;
   content: "";
-  background-image: url("../img/about-2022.png");
+  background-image: url("../img/about-2022.webp");
   left: 0;
   width: 150px;
   height: 320px;
@@ -1897,7 +1852,6 @@ button,
   line-height: 22px;
   color: #041827;
   margin: 0;
-  margin-top: 15px;
   max-width: 970px;
 }
 
@@ -1915,7 +1869,7 @@ button,
   border-radius: 3px;
   padding: 14px;
   width: 180px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .catalog {
@@ -2033,11 +1987,11 @@ button,
   right: 0;
 }
 
-form {
+.form form {
   position: relative;
 }
 
-form::after {
+.form form::after {
   position: absolute;
   content: "";
   width: 510px;
@@ -2590,14 +2544,6 @@ form::after {
 */
 
 @media (min-width: 768px) {
-  .logo__title {
-    display: inline-block;
-  }
-
-  .logo__description {
-    display: inline-block;
-  }
-
   [data-accordion=content] {
     max-height: 0;
     -webkit-transition: max-height 0.3s;
@@ -2776,7 +2722,7 @@ form::after {
     background-repeat: no-repeat, no-repeat;
   }
 
-  form::after {
+  .form form::after {
     display: none;
   }
 
@@ -2947,21 +2893,12 @@ form::after {
     min-height: 70px;
   }
 
-  .logo {
-    min-height: 35px;
-  }
-
-  .logo__image {
-    min-height: 35px;
-    width: 35px;
-  }
-
-  .logo__title {
+  .logo--desktop {
     display: none;
   }
 
-  .logo__description {
-    display: none;
+  .logo--mobile {
+    display: inline-block;
   }
 
   .contacts {
@@ -3519,6 +3456,15 @@ form::after {
   .intro {
     background-image: url("../img/intro/intro-desktop@2x.webp");
     background-size: cover;
+  }
+
+  .about__wrap::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/about-2022.webp");
+    left: 0;
+    width: 150px;
+    height: 320px;
   }
 
   .catalog__item.catalog__item--accessories {

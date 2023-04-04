@@ -28,10 +28,19 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/about-2022.png");
+    background-image: url("../img/about-2022.webp");
     left: 0;
     width: 150px;
     height: 320px;
+
+    @media (min-resolution: 2dppx) {
+      position: absolute;
+      content: "";
+      background-image: url("../img/about-2022.webp");
+      left: 0;
+      width: 150px;
+      height: 320px;
+    }
   }
 
   @media (max-width: $vp-1023) {
@@ -74,7 +83,6 @@
   color: #041827;
 
   margin: 0;
-  margin-top: 15px;
   max-width: 970px;
 
   @media (max-width: $vp-1023) {
@@ -103,7 +111,7 @@
   border-radius: 3px;
   padding: 14px;
   width: 180px;
-  margin-top: 40px;
+  margin-top: 20px;
 
   @media (max-width: $vp-1023) {
     margin-top: 20px;
