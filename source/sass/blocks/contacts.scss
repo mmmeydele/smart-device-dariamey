@@ -12,14 +12,11 @@
   line-height: 18px;
 
   padding: 0;
+  min-width: 480px;
 
   @media (max-width: $vp-767) {
     min-width: 100px;
     justify-content: space-around;
-  }
-
-  @media (min-width: $vp-1024) {
-    min-width: 480px;
   }
 }
 
@@ -32,6 +29,7 @@
 .contacts__email-text {
   color: #f2f5f7;
   padding-left: 15px;
+  display: inline-block;
 
   @media (max-width: $vp-320) {
     display: none;
@@ -39,16 +37,13 @@
 
   @media (max-width: $vp-1023) {
     display: none;
-  }
-
-  @media (min-width: $vp-1024) {
-    display: inline-block;
   }
 }
 
 .contacts__phone-text {
   color: #f2f5f7;
   padding-left: 15px;
+  display: inline-block;
 
   @media (max-width: $vp-320) {
     display: none;
@@ -56,10 +51,6 @@
 
   @media (max-width: $vp-1023) {
     display: none;
-  }
-
-  @media (min-width: $vp-1024) {
-    display: inline-block;
   }
 }
 

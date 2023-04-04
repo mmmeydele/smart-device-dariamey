@@ -8,6 +8,15 @@ import {aboutFull, aboutCollapse} from './modules/about-block';
 import {initAccordions, accordions} from './modules/init-accordion';
 /* eslint-enable */
 
+
+let inputName = document.querySelector('#call-name');
+let buttonModal = document.querySelector('.main-header__button');
+
+buttonModal.addEventListener('click', function () {
+  inputName.focus();
+});
+
+
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initAccordions();

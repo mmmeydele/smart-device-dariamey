@@ -1575,16 +1575,19 @@ button,
   font-size: 16px;
   line-height: 18px;
   padding: 0;
+  min-width: 480px;
 }
 
 .contacts__email-text {
   color: #f2f5f7;
   padding-left: 15px;
+  display: inline-block;
 }
 
 .contacts__phone-text {
   color: #f2f5f7;
   padding-left: 15px;
+  display: inline-block;
 }
 
 .contacts__email-link,
@@ -1613,6 +1616,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
+  background-image: url("../img/intro/intro-desktop.jpg");
   background-image: url("../img/intro/intro-desktop.webp");
   background-color: #041827;
   background-position: bottom, left top;
@@ -1829,6 +1833,7 @@ button,
 .about__wrap::before {
   position: absolute;
   content: "";
+  background-image: url("../img/about-2022.png");
   background-image: url("../img/about-2022.webp");
   left: 0;
   width: 150px;
@@ -1853,6 +1858,10 @@ button,
   color: #041827;
   margin: 0;
   max-width: 970px;
+}
+
+.about__description--full p {
+  margin-top: 0;
 }
 
 .about__button {
@@ -1925,23 +1934,26 @@ button,
 }
 
 .catalog__item.catalog__item--accessories {
+  background-image: url("../img/cards/card-accessories-desktop.jpg");
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  background-color: #041827;
+  background-color: #00b2ff;
 }
 
 .catalog__item.catalog__item--installation {
+  background-image: url("../img/cards/card-installation-desktop.jpg");
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  background-color: #041827;
+  background-color: #00b2ff;
 }
 
 .catalog__item.catalog__item--production {
+  background-image: url("../img/cards/card-production-desktop.jpg");
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
-  background-color: #041827;
+  background-color: #00b2ff;
 }
 
 .catalog__item a {
@@ -2557,20 +2569,6 @@ button,
   }
 }
 
-@media (min-width: 1024px) {
-  .contacts {
-    min-width: 480px;
-  }
-
-  .contacts__email-text {
-    display: inline-block;
-  }
-
-  .contacts__phone-text {
-    display: inline-block;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
@@ -2607,6 +2605,7 @@ button,
   }
 
   .intro {
+    background-image: url("../img/intro/intro-tablet.jpg");
     background-image: url("../img/intro/intro-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -2709,18 +2708,21 @@ button,
   }
 
   .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-tablet.jpg");
     background-image: url("../img/cards/card-accessories-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-tablet.jpg");
     background-image: url("../img/cards/card-installation-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-tablet.jpg");
     background-image: url("../img/cards/card-production-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -2844,23 +2846,27 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .intro {
+    background-image: url("../img/intro/intro-tablet@2x.jpg");
     background-image: url("../img/intro/intro-tablet@2x.webp");
     background-size: cover;
   }
 
   .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-tablet@2x.jpg");
     background-image: url("../img/cards/card-accessories-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-tablet@2x.jpg");
     background-image: url("../img/cards/card-installation-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-tablet@2x.jpg");
     background-image: url("../img/cards/card-production-tablet@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -2912,6 +2918,7 @@ button,
   }
 
   .intro {
+    background-image: url("../img/intro/intro-mobile.jpg");
     background-image: url("../img/intro/intro-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -3042,18 +3049,21 @@ button,
   }
 
   .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-mobile.jpg");
     background-image: url("../img/cards/card-accessories-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-mobile.jpg");
     background-image: url("../img/cards/card-installation-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-mobile.jpg");
     background-image: url("../img/cards/card-production-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -3370,23 +3380,27 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .intro {
+    background-image: url("../img/intro/intro-mobile@2x.jpg");
     background-image: url("../img/intro/intro-mobile@2x.webp");
     background-size: cover;
   }
 
   .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-mobile@2x.jpg");
     background-image: url("../img/cards/card-accessories-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-mobile@2x.jpg");
     background-image: url("../img/cards/card-installation-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-mobile@2x.jpg");
     background-image: url("../img/cards/card-production-mobile@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -3411,6 +3425,7 @@ button,
   }
 
   .intro {
+    background-image: url("../img/intro/intro-mobile.jpg");
     background-image: url("../img/intro/intro-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
@@ -3421,14 +3436,11 @@ button,
   .catalog {
     max-width: 320px;
   }
-
-  .page-container {
-    max-width: 320px;
-  }
 }
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 320px) and (min-resolution: 2dppx) {
   .intro {
+    background-image: url("../img/intro/intro-mobile@2x.jpg");
     background-image: url("../img/intro/intro-mobile@2x.webp");
     background-size: cover;
   }
@@ -3458,6 +3470,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .intro {
+    background-image: url("../img/intro/intro-desktop@2x.jpg");
     background-image: url("../img/intro/intro-desktop@2x.webp");
     background-size: cover;
   }
@@ -3465,25 +3478,29 @@ button,
   .about__wrap::before {
     position: absolute;
     content: "";
-    background-image: url("../img/about-2022.webp");
+    background-image: url("../img/about-2022@2x.png");
+    background-image: url("../img/about-2022@2x.webp");
     left: 0;
     width: 150px;
     height: 320px;
   }
 
   .catalog__item.catalog__item--accessories {
+    background-image: url("../img/cards/card-accessories-desktop@2x.jpg");
     background-image: url("../img/cards/card-accessories-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--installation {
+    background-image: url("../img/cards/card-installation-desktop@2x.jpg");
     background-image: url("../img/cards/card-installation-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   .catalog__item.catalog__item--production {
+    background-image: url("../img/cards/card-production-desktop@2x.jpg");
     background-image: url("../img/cards/card-production-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;

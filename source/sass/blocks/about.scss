@@ -28,6 +28,7 @@
   &::before {
     position: absolute;
     content: "";
+    background-image: url("../img/about-2022.png");
     background-image: url("../img/about-2022.webp");
     left: 0;
     width: 150px;
@@ -36,7 +37,8 @@
     @media (min-resolution: 2dppx) {
       position: absolute;
       content: "";
-      background-image: url("../img/about-2022.webp");
+      background-image: url("../img/about-2022@2x.png");
+      background-image: url("../img/about-2022@2x.webp");
       left: 0;
       width: 150px;
       height: 320px;
@@ -94,6 +96,11 @@
     max-width: 270px;
   }
 }
+
+.about__description--full p {
+  margin-top: 0;
+}
+
 
 .about__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
