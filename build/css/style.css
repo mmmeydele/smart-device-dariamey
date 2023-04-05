@@ -1636,9 +1636,6 @@ button,
   flex-direction: column;
   max-width: 720px;
   min-height: 295px;
-  padding: 0;
-  margin: 0;
-  margin-left: 28%;
 }
 
 .intro__title p {
@@ -2592,6 +2589,12 @@ button,
     display: none;
   }
 
+  .contacts {
+    min-width: 100px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
   .contacts__phone {
     margin-left: 30px;
   }
@@ -2909,12 +2912,6 @@ button,
 
   .logo--mobile {
     display: inline-block;
-  }
-
-  .contacts {
-    min-width: 100px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
   }
 
   .intro {
@@ -3413,14 +3410,6 @@ button,
   }
 
   .main-header__button {
-    display: none;
-  }
-
-  .contacts__email-text {
-    display: none;
-  }
-
-  .contacts__phone-text {
     display: none;
   }
 

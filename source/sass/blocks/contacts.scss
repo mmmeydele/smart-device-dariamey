@@ -14,7 +14,7 @@
   padding: 0;
   min-width: 480px;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023){
     min-width: 100px;
     justify-content: space-around;
   }
@@ -31,10 +31,6 @@
   padding-left: 15px;
   display: inline-block;
 
-  @media (max-width: $vp-320) {
-    display: none;
-  }
-
   @media (max-width: $vp-1023) {
     display: none;
   }
@@ -44,10 +40,6 @@
   color: #f2f5f7;
   padding-left: 15px;
   display: inline-block;
-
-  @media (max-width: $vp-320) {
-    display: none;
-  }
 
   @media (max-width: $vp-1023) {
     display: none;

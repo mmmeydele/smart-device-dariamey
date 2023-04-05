@@ -9,7 +9,7 @@ import {initAccordions, accordions} from './modules/init-accordion';
 /* eslint-enable */
 
 
-let inputName = document.querySelector('#call-name');
+let inputName = document.querySelector('.modal__name input[id="call-name"]');
 let buttonModal = document.querySelector('.main-header__button');
 
 buttonModal.addEventListener('click', function () {
