@@ -182,6 +182,11 @@
   }
 }
 
+.modal__name input {
+  &:focus {
+    outline: #041427;
+  }
+}
 
 .modal__textarea textarea {
   background: rgba(4, 20, 39, 0.15);

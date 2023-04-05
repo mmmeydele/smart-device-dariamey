@@ -13,7 +13,7 @@ let inputName = document.querySelector('.modal__name input[id="call-name"]');
 let buttonModal = document.querySelector('.main-header__button');
 
 buttonModal.addEventListener('click', function () {
-  inputName.focus();
+  setTimeout(inputName.focus(), 2000);
 });
 
 
