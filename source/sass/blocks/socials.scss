@@ -1,5 +1,5 @@
 .socials {
-  width: 150px;
+  margin-left: 12px;
 }
 
 .socials__list {
@@ -7,7 +7,9 @@
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+
+  width: 150px;
   gap: 15px;
 
   padding: 0;

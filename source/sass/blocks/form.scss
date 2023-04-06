@@ -6,8 +6,8 @@
     content: "";
     width: 510px;
     height: 285px;
-    top: 0;
-    right: 112%;
+    bottom: -15px;
+    right: 122%;
 
     background-image: url("../img/paper-airplane.png");
     background-repeat: no-repeat;
@@ -37,11 +37,11 @@
     content: "";
     width: 1265px;
     height: 950px;
-    left: -755px;
-    bottom: 150px;
+    left: -465px;
+    bottom: 280px;
 
     background: rgba(4, 24, 39, 0.5);
-    transform: rotate(-53.1deg);
+    transform: rotate(-43.1deg);
   }
 
 
@@ -72,11 +72,8 @@
 }
 
 .form__wrap {
-  max-width: 585px;
-  min-height: 420px;
   margin: 0 auto;
-
-  padding-left: 250px;
+  padding-left: 635px;
 
   @media (max-width: $vp-1023) {
     padding-left: 0;
@@ -242,6 +239,10 @@
   }
 }
 
+.form__button-submit {
+  margin-top: 25px;
+}
+
 .form__button-submit button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -256,7 +257,7 @@
 
   width: 265px;
   height: 45px;
-  margin-right: 30px;
+  margin-right: 50px;
 
   background: #041427;
   border-radius: 3px;
@@ -273,6 +274,7 @@
 }
 
 .form__personal-info {
+  margin-top: 30px;
   width: 265px;
   height: 45px;
 
