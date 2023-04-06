@@ -48,7 +48,7 @@
   @media (max-width: $vp-1023) {
     max-width: 1023px;
     min-height: 580px;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 125px;
 
     &::before {
@@ -101,6 +101,10 @@
   margin: 0;
   margin-bottom: 15px;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 30px;
     line-height: 42px;
@@ -121,7 +125,7 @@
   margin-bottom: 35px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $vp-767) {
@@ -231,6 +235,7 @@
 
   @media (max-width: $vp-1023) {
     width: 670px;
+    padding: 25px 10px;
   }
 
   @media (max-width: $vp-767) {
@@ -264,7 +269,7 @@
   border-color: transparent;
 
   @media (max-width: $vp-1023) {
-    margin-right: 85px;
+    margin-right: 80px;
   }
 
   @media (max-width: $vp-767) {

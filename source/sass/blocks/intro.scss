@@ -93,8 +93,7 @@
   padding-top: 20px;
 
   @media (max-width: $vp-1023) and (min-width: $vp-768) {
-    padding-left: 20px;
-
+    padding-top: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -118,7 +117,8 @@
     font-size: 64px;
     line-height: 75px;
 
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   @media (max-width: $vp-767) {
@@ -136,7 +136,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 155%;
+  line-height: 34px;
 
   color: #f2f5f7;
 
@@ -146,12 +146,12 @@
 
   @media (max-width: $vp-1023) {
     width: 670px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 14px;
-    line-height: 155%;
+    line-height: 34px;
 
     width: 270px;
   }

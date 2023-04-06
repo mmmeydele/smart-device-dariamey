@@ -1533,6 +1533,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 120px;
   margin: 0 auto;
   padding: 30px 40px 35px;
@@ -1552,7 +1555,12 @@ button,
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   padding: 10px 15px;
-  margin-left: 145px;
+  margin-right: 60px;
+}
+
+.logo--desktop {
+  width: 215px;
+  height: 55px;
 }
 
 .logo--mobile {
@@ -1577,7 +1585,6 @@ button,
   font-size: 16px;
   line-height: 18px;
   padding: 0;
-  margin-left: 160px;
   min-width: 480px;
 }
 
@@ -1665,7 +1672,7 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 155%;
+  line-height: 34px;
   color: #f2f5f7;
   margin: 0;
   margin-bottom: 40px;
@@ -1785,7 +1792,7 @@ button,
   line-height: 34px;
   color: #00b2ff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding-top: 20px;
 }
 
@@ -1884,7 +1891,7 @@ button,
   color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
-  padding: 14px;
+  padding: 12px;
   width: 180px;
   margin-top: 20px;
 }
@@ -2597,7 +2604,10 @@ button,
   }
 
   .main-header__wrap {
-    padding: 22px 25px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 50px 25px;
     min-height: 100px;
   }
 
@@ -2613,6 +2623,9 @@ button,
     min-width: 100px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 5px;
   }
 
   .contacts__phone {
@@ -2644,12 +2657,13 @@ button,
   .intro__title p {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .intro__description p {
     width: 670px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .intro__button {
@@ -2659,7 +2673,7 @@ button,
   .advantages {
     max-width: 767px;
     min-height: 910px;
-    padding: 80px 0;
+    padding: 75px 0;
   }
 
   .advantages__list {
@@ -2689,7 +2703,7 @@ button,
   }
 
   .about__wrap {
-    padding-left: 180px;
+    padding-left: 225px;
     padding-right: 0;
   }
 
@@ -2698,20 +2712,18 @@ button,
   }
 
   .about__button {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .catalog {
     max-width: 1023px;
     min-height: 1080px;
-    padding-top: 60px;
-    padding-bottom: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 55px 0 75px;
   }
 
   .catalog__title {
     max-width: 670px;
+    margin-bottom: 40px;
   }
 
   .catalog__title.catalog__title--mobile {
@@ -2726,13 +2738,17 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
     max-width: 670px;
     min-height: 810px;
   }
 
   .catalog__item {
     min-height: 250px;
+  }
+
+  .catalog__item--installation h3 {
+    width: 140px;
   }
 
   .catalog__item.catalog__item--accessories {
@@ -2756,6 +2772,11 @@ button,
     background-repeat: no-repeat, no-repeat;
   }
 
+  .catalog__item h3 {
+    top: 35px;
+    left: 45px;
+  }
+
   .form form::after {
     display: none;
   }
@@ -2763,7 +2784,7 @@ button,
   .form {
     max-width: 1023px;
     min-height: 580px;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 125px;
   }
 
@@ -2782,8 +2803,12 @@ button,
     min-height: 405px;
   }
 
+  .form__title {
+    margin-bottom: 10px;
+  }
+
   .form__description {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .form__call form {
@@ -2797,10 +2822,11 @@ button,
 
   .form__textarea textarea {
     width: 670px;
+    padding: 25px 10px;
   }
 
   .form__button-submit button {
-    margin-right: 85px;
+    margin-right: 80px;
   }
 
   .main-footer__wrap {
@@ -2813,7 +2839,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 65px;
   }
 
@@ -2964,7 +2990,7 @@ button,
 
   .intro__description p {
     font-size: 14px;
-    line-height: 155%;
+    line-height: 34px;
     width: 270px;
   }
 
@@ -3465,7 +3491,7 @@ button,
 
 @media (max-width: 1023px) and (min-width: 768px) {
   .intro__wrap {
-    padding-left: 20px;
+    padding-top: 0;
     margin-left: auto;
     margin-right: auto;
   }

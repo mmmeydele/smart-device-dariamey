@@ -47,7 +47,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    padding-left: 180px;
+    padding-left: 225px;
     padding-right: 0;
   }
 
@@ -117,12 +117,12 @@
 
   border: 1px solid #00b2ff;
   border-radius: 3px;
-  padding: 14px;
+  padding: 12px;
   width: 180px;
   margin-top: 20px;
 
   @media (max-width: $vp-1023) {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   @media (max-width: $vp-767) {

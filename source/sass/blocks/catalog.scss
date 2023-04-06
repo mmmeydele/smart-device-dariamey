@@ -19,10 +19,7 @@
     max-width: 1023px;
     min-height: 1080px;
 
-    padding-top: 60px;
-    padding-bottom: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 55px 0 75px;
   }
 
   @media (max-width: $vp-767) {
@@ -55,6 +52,7 @@
 
   @media (max-width: $vp-1023) {
     max-width: 670px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $vp-767) {
@@ -94,7 +92,7 @@
   @media (max-width: $vp-1023) {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
 
     max-width: 670px;
     min-height: 810px;
@@ -122,6 +120,11 @@
   }
 }
 
+.catalog__item--installation h3 {
+  @media (max-width: $vp-1023) {
+    width: 140px;
+  }
+}
 
 .catalog__item.catalog__item--accessories {
   background-image: url("../img/cards/card-accessories-desktop.jpg");
@@ -281,6 +284,11 @@
   content: "";
   top: 50px;
   left: 40px;
+
+  @media (max-width: $vp-1023) {
+    top: 35px;
+    left: 45px;
+  }
 
   @media (max-width: $vp-767) {
     max-width: 150px;
