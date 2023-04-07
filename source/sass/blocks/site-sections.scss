@@ -70,6 +70,7 @@
   @media (max-width: $vp-1023) {
     max-height: 220px;
     flex-wrap: nowrap;
+    gap: 5px;
   }
 
   @media (max-width: $vp-767) {

@@ -1876,7 +1876,11 @@ button,
 }
 
 .about__description--full p {
-  margin-top: 0;
+  margin-top: 15px;
+}
+
+.about__description--mobile p {
+  margin: 0;
 }
 
 .about__button {
@@ -1889,6 +1893,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00b2ff;
+  background-color: #ffffff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
   padding: 12px;
@@ -2470,7 +2475,6 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -2712,7 +2716,7 @@ button,
   }
 
   .about__button {
-    margin-top: 0;
+    margin-top: 15px;
   }
 
   .catalog {
@@ -2784,8 +2788,8 @@ button,
   .form {
     max-width: 1023px;
     min-height: 580px;
-    padding-top: 45px;
-    padding-bottom: 125px;
+    padding-top: 40px;
+    padding-bottom: 115px;
   }
 
   .form::before {
@@ -2822,7 +2826,11 @@ button,
 
   .form__textarea textarea {
     width: 670px;
-    padding: 25px 10px;
+    padding: 30px 15px;
+  }
+
+  .form__button-submit {
+    margin-top: 30px;
   }
 
   .form__button-submit button {
@@ -2880,6 +2888,7 @@ button,
     max-height: 220px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    gap: 5px;
   }
 
   .office {
@@ -2893,6 +2902,10 @@ button,
 
   .office__title {
     margin-top: 0;
+  }
+
+  .office__list {
+    gap: 5px;
   }
 
   .page-container {
@@ -2965,6 +2978,11 @@ button,
 
   .logo--mobile {
     display: inline-block;
+    margin-left: 15px;
+  }
+
+  .contacts {
+    margin-right: 20px;
   }
 
   .intro {
@@ -2984,14 +3002,15 @@ button,
   .intro__title p {
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-top: 0;
     width: 270px;
   }
 
   .intro__description p {
     font-size: 14px;
-    line-height: 34px;
+    line-height: 22px;
     width: 270px;
+    margin-bottom: 45px;
   }
 
   .intro__button {
@@ -3003,6 +3022,7 @@ button,
     font-size: 14px;
     line-height: 16px;
     margin-left: 0;
+    padding: 13px 25px;
     width: 270px;
   }
 
@@ -3026,7 +3046,8 @@ button,
 
   .advantages__item {
     max-width: 270px;
-    min-height: 340px;
+    max-height: 340px;
+    min-height: 325px;
   }
 
   .advantages__item::before {
@@ -3034,12 +3055,20 @@ button,
   }
 
   .advantages__item-wrap {
+    padding: 30px 30px 35px;
     max-width: 270px;
-    min-height: 340px;
+    min-height: 325px;
+    max-height: 340px;
+  }
+
+  .advantages__icon {
+    width: 30px;
+    height: 30px;
   }
 
   .advantages__title h3 {
     font-size: 20px;
+    padding-top: 12px;
   }
 
   .advantages__item-wrap p {
@@ -3048,7 +3077,7 @@ button,
   }
 
   .about {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   .about__wrap {
@@ -3066,6 +3095,18 @@ button,
   .about__description {
     font-size: 14px;
     max-width: 270px;
+  }
+
+  .about__description p {
+    margin-top: 10px;
+  }
+
+  .about__description--mobile p {
+    margin-top: 0;
+  }
+
+  .about__description--hidden p {
+    display: none;
   }
 
   .about__button {
@@ -3088,9 +3129,12 @@ button,
   .catalog__title.catalog__title--mobile {
     display: inline-block;
     font-size: 28px;
-    max-width: 270px;
-    min-height: 64px;
-    margin-bottom: 40px;
+    line-height: 39px;
+    margin-bottom: 30px;
+  }
+
+  .catalog__title--mobile p {
+    margin: 0;
   }
 
   .catalog__list {
@@ -3130,7 +3174,7 @@ button,
 
   .catalog__item h3 {
     max-width: 150px;
-    top: 30px;
+    top: 25px;
     left: 30px;
   }
 
@@ -3162,13 +3206,13 @@ button,
   .form__title {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .form__description {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .form__call form {
@@ -3176,8 +3220,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 270px;
-    height: 450px;
+    max-width: 270px;
+    min-height: 450px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .form__field input {
@@ -3190,12 +3236,20 @@ button,
 
   .form__textarea textarea {
     width: 270px;
-    margin-bottom: 30px;
+    height: 180px;
+    padding: 22px 15px;
+  }
+
+  .form__button-submit {
+    margin-top: 25px;
   }
 
   .form__button-submit button {
     width: 270px;
-    margin-bottom: 25px;
+  }
+
+  .form__personal-info {
+    margin-top: 25px;
   }
 
   .main-footer__wrap {
@@ -3206,11 +3260,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 35px 0;
   }
 
   .main-footer__logo-socials {
@@ -3224,6 +3277,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    min-width: 310px;
     max-width: 320px;
     gap: 15px;
   }

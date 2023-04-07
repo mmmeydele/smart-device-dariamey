@@ -125,8 +125,7 @@
     font-size: 36px;
     line-height: 42px;
 
-    margin-bottom: 20px;
-
+    margin-top: 0;
     width: 270px;
   }
 }
@@ -151,9 +150,10 @@
 
   @media (max-width: $vp-767) {
     font-size: 14px;
-    line-height: 34px;
+    line-height: 22px;
 
     width: 270px;
+    margin-bottom: 45px;
   }
 }
 
@@ -192,6 +192,7 @@
     line-height: 16px;
 
     margin-left: 0;
+    padding: 13px 25px;
     width: 270px;
   }
 }
