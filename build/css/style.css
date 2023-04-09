@@ -2654,7 +2654,6 @@ button,
   }
 
   .container .intro__wrap {
-    margin-left: 0;
     margin: 0 auto;
   }
 
@@ -2995,7 +2994,6 @@ button,
   }
 
   .container .intro__wrap {
-    margin-left: 0;
     margin: 0 auto;
   }
 
@@ -3028,8 +3026,7 @@ button,
 
   .advantages {
     max-width: 320px;
-    min-height: 1520px;
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   .advantages__list {
@@ -3046,12 +3043,15 @@ button,
 
   .advantages__item {
     max-width: 270px;
-    max-height: 340px;
-    min-height: 325px;
+    min-height: 340px;
   }
 
   .advantages__item::before {
     height: 100%;
+  }
+
+  .advantages__item--mobile {
+    min-height: 325px;
   }
 
   .advantages__item-wrap {
@@ -3077,7 +3077,8 @@ button,
   }
 
   .about {
-    padding-top: 0;
+    padding-top: 35px;
+    padding-bottom: 74px;
   }
 
   .about__wrap {
@@ -3094,6 +3095,7 @@ button,
 
   .about__description {
     font-size: 14px;
+    line-height: 18px;
     max-width: 270px;
   }
 
@@ -3110,7 +3112,7 @@ button,
   }
 
   .about__button {
-    width: 180px;
+    width: 160px;
   }
 
   .catalog {
@@ -3130,7 +3132,7 @@ button,
     display: inline-block;
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .catalog__title--mobile p {
@@ -3145,6 +3147,10 @@ button,
 
   .catalog__item {
     min-height: 250px;
+  }
+
+  .catalog__item--installation h3 {
+    width: 120px;
   }
 
   .catalog__item.catalog__item--accessories {
@@ -3176,6 +3182,8 @@ button,
     max-width: 150px;
     top: 25px;
     left: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .catalog__item-arrow {
@@ -3301,8 +3309,8 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    max-width: 320px;
-    margin-top: 25px;
+    min-width: 320px;
+    margin-top: 20px;
   }
 
   .site-sections {
@@ -3380,7 +3388,7 @@ button,
     content: "";
     position: absolute;
     top: 28px;
-    left: 285px;
+    left: 275px;
     width: 15px;
     height: 1px;
     background-color: #ffffff;
@@ -3397,7 +3405,7 @@ button,
     content: "";
     position: absolute;
     top: 28px;
-    left: 285px;
+    left: 275px;
     width: 15px;
     height: 1px;
     background-color: #ffffff;
@@ -3413,7 +3421,7 @@ button,
     content: "";
     position: absolute;
     top: 28px;
-    left: 285px;
+    left: 275px;
     width: 15px;
     height: 1px;
     background-color: #ffffff;

@@ -14,7 +14,7 @@
   padding: 0;
   min-width: 480px;
 
-  @media (max-width: $vp-1023){
+  @media (max-width: $vp-1023) {
     min-width: 100px;
     justify-content: space-around;
     margin: 0;
@@ -22,7 +22,7 @@
     margin-bottom: 5px;
   }
 
-  @media (max-width: $vp-767){
+  @media (max-width: $vp-767) {
     margin-right: 20px;
   }
 }

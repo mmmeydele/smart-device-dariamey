@@ -17,8 +17,7 @@
 
   @media (max-width: $vp-767) {
     max-width: 320px;
-    min-height: 1520px;
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 }
 
@@ -80,12 +79,17 @@
 
   @media (max-width: $vp-767) {
     max-width: 270px;
-    max-height: 340px;
-    min-height: 325px;
+    min-height: 340px;
 
     &::before {
       height: 100%;
     }
+  }
+}
+
+.advantages__item--mobile {
+  @media (max-width: $vp-767) {
+    min-height: 325px;
   }
 }
 
@@ -183,4 +187,3 @@
     max-width: 210px;
   }
 }
-
