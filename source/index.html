@@ -21,12 +21,12 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header__wrap">
-          <a class="main-header__logo logo logo--desktop" href="index.html">
-            <img class="logo__image logo__image--desktop" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта">
-          </a>
+          <a class="main-header__logo logo" href="index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg" width="35" height="35" >
+              <img class="logo__image" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта">
+            </picture>
 
-          <a class="main-header__logo logo logo--mobile" href="index.html">
-            <img class="logo__image logo__image--mobile" src="img/svg/logo-mobile.svg" width="35" height="35" alt="Логотип сайта">
           </a>
 
           <ul class="main-header__contacts contacts">

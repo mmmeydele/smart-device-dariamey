@@ -1,16 +1,9 @@
-.logo--desktop {
+.logo .logo__image {
   width: 215px;
   height: 55px;
 
   @media (max-width: $vp-767) {
-    display: none;
-  }
-}
-
-.logo--mobile {
-  display: none;
-
-  @media (max-width: $vp-767) {
-    display: inline-block;
+    width: 35px;
+    height: 35px;
   }
 }

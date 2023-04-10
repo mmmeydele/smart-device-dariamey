@@ -1558,13 +1558,9 @@ button,
   margin-right: 60px;
 }
 
-.logo--desktop {
+.logo .logo__image {
   width: 215px;
   height: 55px;
-}
-
-.logo--mobile {
-  display: none;
 }
 
 .contacts {
@@ -2959,12 +2955,9 @@ button,
     min-height: 70px;
   }
 
-  .logo--desktop {
-    display: none;
-  }
-
-  .logo--mobile {
-    display: inline-block;
+  .logo .logo__image {
+    width: 35px;
+    height: 35px;
   }
 
   .contacts {
