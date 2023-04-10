@@ -3259,6 +3259,11 @@ button,
     padding: 35px 0;
   }
 
+  .main-footer__logo .logo__image {
+    width: 215px;
+    height: 55px;
+  }
+
   .main-footer__logo-socials {
     display: -webkit-box;
     display: -ms-flexbox;

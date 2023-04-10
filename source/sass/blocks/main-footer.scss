@@ -37,6 +37,14 @@
   }
 }
 
+.main-footer__logo .logo__image {
+  @media (max-width: $vp-767) {
+    width: 215px;
+    height: 55px;
+  }
+
+}
+
 .main-footer__logo-socials {
   display: flex;
   flex-direction: column;
