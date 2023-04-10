@@ -23,13 +23,20 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-right: 20px;
+    min-width: 85px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
   }
 }
 
 .contacts__phone {
   @media (max-width: $vp-1023) {
     margin-left: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
   }
 }
 

@@ -2931,7 +2931,7 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 25px;
-    width: 320px;
+    max-width: 320px;
   }
 
   .modal__wrapper {
@@ -2954,7 +2954,8 @@ button,
   }
 
   .main-header__wrap {
-    padding: 9px 15px;
+    max-width: 290px;
+    padding: 5px;
     min-height: 70px;
   }
 
@@ -2964,11 +2965,19 @@ button,
 
   .logo--mobile {
     display: inline-block;
-    margin-left: 15px;
   }
 
   .contacts {
-    margin-right: 20px;
+    min-width: 85px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .contacts__phone {
+    margin-left: 0;
   }
 
   .intro {

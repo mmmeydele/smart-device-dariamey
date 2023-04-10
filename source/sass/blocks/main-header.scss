@@ -40,7 +40,8 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 9px 15px;
+    max-width: 290px;
+    padding: 5px;
     min-height: 70px;
   }
 }
