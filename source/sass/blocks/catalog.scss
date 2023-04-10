@@ -137,28 +137,24 @@
 }
 
 .catalog__item.catalog__item--accessories {
-  background-image: url("../img/cards/card-accessories-desktop.jpg");
   background-image: url("../img/cards/card-accessories-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
   background-color: #00b2ff;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cards/card-accessories-desktop@2x.jpg");
     background-image: url("../img/cards/card-accessories-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   @media (max-width: $vp-1023) {
-    background-image: url("../img/cards/card-accessories-tablet.jpg");
     background-image: url("../img/cards/card-accessories-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-accessories-tablet@2x.jpg");
       background-image: url("../img/cards/card-accessories-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
@@ -166,13 +162,11 @@
   }
 
   @media (max-width: $vp-767) {
-    background-image: url("../img/cards/card-accessories-mobile.jpg");
     background-image: url("../img/cards/card-accessories-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-accessories-mobile@2x.jpg");
       background-image: url("../img/cards/card-accessories-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
@@ -181,27 +175,23 @@
 }
 
 .catalog__item.catalog__item--installation {
-  background-image: url("../img/cards/card-installation-desktop.jpg");
   background-image: url("../img/cards/card-installation-desktop.webp");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
   background-color: #00b2ff;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cards/card-installation-desktop@2x.jpg");
     background-image: url("../img/cards/card-installation-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   @media (max-width: $vp-1023) {
-    background-image: url("../img/cards/card-installation-tablet.jpg");
     background-image: url("../img/cards/card-installation-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-installation-tablet@2x.jpg");
       background-image: url("../img/cards/card-installation-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
@@ -209,13 +199,11 @@
   }
 
   @media (max-width: $vp-767) {
-    background-image: url("../img/cards/card-installation-mobile.jpg");
     background-image: url("../img/cards/card-installation-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-installation-mobile@2x.jpg");
       background-image: url("../img/cards/card-installation-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
@@ -224,26 +212,22 @@
 }
 
 .catalog__item.catalog__item--production {
-  background-image: url("../img/cards/card-production-desktop.jpg");
   background-image: url("../img/cards/card-production-desktop.webp");
   background-position: bottom, left top;
   background-color: #00b2ff;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cards/card-production-desktop@2x.jpg");
     background-image: url("../img/cards/card-production-desktop@2x.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
   }
 
   @media (max-width: $vp-1023) {
-    background-image: url("../img/cards/card-production-tablet.jpg");
     background-image: url("../img/cards/card-production-tablet.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-production-tablet@2x.jpg");
       background-image: url("../img/cards/card-production-tablet@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
@@ -251,13 +235,11 @@
   }
 
   @media (max-width: $vp-767) {
-    background-image: url("../img/cards/card-production-mobile.jpg");
     background-image: url("../img/cards/card-production-mobile.webp");
     background-position: bottom, left top;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cards/card-production-mobile@2x.jpg");
       background-image: url("../img/cards/card-production-mobile@2x.webp");
       background-position: bottom, left top;
       background-repeat: no-repeat, no-repeat;
