@@ -48,7 +48,7 @@
   @media (max-width: $vp-1023) {
     max-width: 1023px;
     min-height: 580px;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-bottom: 115px;
 
     &::before {
@@ -280,6 +280,7 @@
 
   @media (max-width: $vp-1023) {
     margin-right: 80px;
+    padding: 16px 25px 14px;
   }
 
   @media (max-width: $vp-767) {

@@ -99,6 +99,10 @@
 }
 
 .about__description p {
+  @media (max-width: $vp-1023) {
+    margin-top: 12px;
+  }
+
   @media (max-width: $vp-767) {
     margin-top: 10px;
   }
@@ -111,12 +115,20 @@
 .about__description--mobile p {
   margin: 0;
 
+  @media (max-width: $vp-1023) {
+    margin-top: 0;
+  }
+
   @media (max-width: $vp-767) {
     margin-top: 0;
   }
 }
 
 .about__description--hidden p {
+  @media (max-width: $vp-1023) {
+    margin-top: 0;
+  }
+
   @media (max-width: $vp-767) {
     display: none;
   }
