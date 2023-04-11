@@ -95,18 +95,17 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 
   color: #f2f5f7;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (max-width: $vp-1023) {
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: 0.08em;
 
     margin-top: 5px;
     margin-bottom: 5px;
@@ -115,6 +114,7 @@
   @media (max-width: $vp-767) {
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 0.07em;
 
     margin-top: 0;
     width: 270px;
@@ -131,7 +131,7 @@
   color: #f2f5f7;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   max-width: 685px;
 
   @media (max-width: $vp-1023) {
@@ -162,8 +162,9 @@
   background: #00b2ff;
   border-radius: 3px;
 
-  padding: 15px 25px;
+  padding: 18px 22px;
   width: 410px;
+  height: 55px;
 
   @media (max-width: $vp-1023) {
     margin-left: 7%;
@@ -185,5 +186,6 @@
     margin-left: 0;
     padding: 13px 25px;
     width: 270px;
+    height: 40px;
   }
 }

@@ -7,7 +7,7 @@
     width: 510px;
     height: 285px;
     bottom: -15px;
-    right: 122%;
+    right: 120%;
 
     background-image: url("../img/paper-airplane.png");
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 
 .form {
   margin: 0 auto;
-  padding-top: 170px;
+  padding-top: 165px;
   padding-bottom: 250px;
 
   width: 100%;
@@ -62,7 +62,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 750px;
-    padding-bottom: 90px;
+    padding-bottom: 85px;
 
     &::before,
     &::after {
@@ -73,7 +73,7 @@
 
 .form__wrap {
   margin: 0 auto;
-  padding-left: 635px;
+  padding-left: 625px;
 
   @media (max-width: $vp-1023) {
     padding-left: 0;

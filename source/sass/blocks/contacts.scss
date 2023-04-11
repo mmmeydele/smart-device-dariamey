@@ -12,7 +12,8 @@
   line-height: 18px;
 
   padding: 0;
-  min-width: 480px;
+  min-width: 465px;
+  margin: 14px 5px 16px 0;
 
   @media (max-width: $vp-1023) {
     min-width: 100px;

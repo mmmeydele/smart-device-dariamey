@@ -1519,7 +1519,7 @@ button,
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 500;
 }
 
 .main-header__wrap {
@@ -1538,7 +1538,6 @@ button,
   justify-content: space-between;
   min-height: 120px;
   margin: 0 auto;
-  padding: 30px 40px 35px;
 }
 
 .main-header__button {
@@ -1556,6 +1555,8 @@ button,
   border-radius: 3px;
   padding: 10px 15px;
   margin-right: 60px;
+  margin-bottom: 5px;
+  min-width: 130px;
 }
 
 .logo .logo__image {
@@ -1581,7 +1582,8 @@ button,
   font-size: 16px;
   line-height: 18px;
   padding: 0;
-  min-width: 480px;
+  min-width: 465px;
+  margin: 14px 5px 16px 0;
 }
 
 .contacts__email-text {
@@ -1655,11 +1657,11 @@ button,
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #f2f5f7;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .intro__description p {
@@ -1670,7 +1672,7 @@ button,
   line-height: 34px;
   color: #f2f5f7;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   max-width: 685px;
 }
 
@@ -1686,8 +1688,9 @@ button,
   color: #f2f5f7;
   background: #00b2ff;
   border-radius: 3px;
-  padding: 15px 25px;
+  padding: 18px 22px;
   width: 410px;
+  height: 55px;
 }
 
 .intro__button.intro__button--mobile {
@@ -1787,7 +1790,7 @@ button,
   line-height: 34px;
   color: #00b2ff;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding-top: 20px;
 }
 
@@ -1892,7 +1895,7 @@ button,
   border-radius: 3px;
   padding: 12px;
   width: 180px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .catalog {
@@ -2025,14 +2028,14 @@ button,
   width: 510px;
   height: 285px;
   bottom: -15px;
-  right: 122%;
+  right: 120%;
   background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
 }
 
 .form {
   margin: 0 auto;
-  padding-top: 170px;
+  padding-top: 165px;
   padding-bottom: 250px;
   width: 100%;
   min-height: 840px;
@@ -2055,7 +2058,7 @@ button,
 
 .form__wrap {
   margin: 0 auto;
-  padding-left: 635px;
+  padding-left: 625px;
 }
 
 .form__title {
@@ -2380,6 +2383,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 5px;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -2434,7 +2438,8 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -2655,7 +2660,6 @@ button,
   .intro__title p {
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: 0.08em;
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -2908,6 +2912,7 @@ button,
 
   .office__title {
     margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .office__list {
@@ -3008,6 +3013,7 @@ button,
   .intro__title p {
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 0.07em;
     margin-top: 0;
     width: 270px;
   }
@@ -3030,6 +3036,7 @@ button,
     margin-left: 0;
     padding: 13px 25px;
     width: 270px;
+    height: 40px;
   }
 
   .advantages {
@@ -3038,6 +3045,7 @@ button,
   }
 
   .advantages__list {
+    gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3076,7 +3084,9 @@ button,
 
   .advantages__title h3 {
     font-size: 20px;
+    line-height: 30px;
     padding-top: 12px;
+    margin-bottom: 10px;
   }
 
   .advantages__item-wrap p {
@@ -3108,6 +3118,7 @@ button,
   }
 
   .about__description p {
+    margin-bottom: 20px;
     margin-top: 10px;
   }
 
@@ -3120,7 +3131,10 @@ button,
   }
 
   .about__button {
+    padding: 0;
+    margin-top: 0;
     width: 160px;
+    height: 35px;
   }
 
   .catalog {
@@ -3203,7 +3217,7 @@ button,
 
   .form {
     min-height: 750px;
-    padding-bottom: 90px;
+    padding-bottom: 85px;
   }
 
   .form::before,
