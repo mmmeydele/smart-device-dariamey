@@ -19,4 +19,8 @@
 
 .socials__item {
   padding: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

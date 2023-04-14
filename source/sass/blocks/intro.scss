@@ -166,6 +166,10 @@
   width: 410px;
   height: 55px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   @media (max-width: $vp-1023) {
     margin-left: 7%;
   }

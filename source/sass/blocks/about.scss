@@ -154,6 +154,10 @@
   width: 180px;
   margin-top: 40px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   @media (max-width: $vp-1023) {
     margin-top: 15px;
   }

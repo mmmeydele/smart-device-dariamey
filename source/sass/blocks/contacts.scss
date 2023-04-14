@@ -41,6 +41,13 @@
   }
 }
 
+.contacts__phone,
+.contacts__email {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .contacts__email-text {
   color: #f2f5f7;
   padding-left: 15px;

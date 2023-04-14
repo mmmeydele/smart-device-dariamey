@@ -8,12 +8,17 @@
 
   position: absolute;
   content: "";
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .personal-info__checkbox[type="checkbox"]:checked + .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
   background-color: #00b3ff;
+  cursor: pointer;
 
   width: 15px;
   height: 15px;
@@ -30,6 +35,10 @@
   background-image: url("../img/svg/arrow-checkbox.svg");
   background-repeat: no-repeat;
   content: "";
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .personal-info__text {

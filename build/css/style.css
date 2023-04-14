@@ -960,6 +960,7 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  cursor: pointer;
   color: #ffffff;
   width: 420px;
   height: 45px;
@@ -1564,6 +1565,10 @@ button,
   height: 55px;
 }
 
+.logo .logo__image:hover {
+  opacity: 0.8;
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1584,6 +1589,11 @@ button,
   padding: 0;
   min-width: 465px;
   margin: 14px 5px 16px 0;
+}
+
+.contacts__phone:hover,
+.contacts__email:hover {
+  opacity: 0.8;
 }
 
 .contacts__email-text {
@@ -1691,6 +1701,10 @@ button,
   padding: 18px 22px;
   width: 410px;
   height: 55px;
+}
+
+.intro__button:hover {
+  opacity: 0.8;
 }
 
 .intro__button.intro__button--mobile {
@@ -1898,6 +1912,10 @@ button,
   margin-top: 40px;
 }
 
+.about__button:hover {
+  opacity: 0.8;
+}
+
 .catalog {
   min-height: 960px;
   width: 100%;
@@ -2018,6 +2036,10 @@ button,
   right: 0;
 }
 
+.catalog__item-arrow:hover {
+  opacity: 0.8;
+}
+
 .form form {
   position: relative;
 }
@@ -2112,6 +2134,10 @@ button,
   padding: 15px;
 }
 
+.form__field input:hover {
+  opacity: 0.8;
+}
+
 .form__field input::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2180,6 +2206,10 @@ button,
   padding: 15px;
 }
 
+.form__textarea textarea:hover {
+  opacity: 0.8;
+}
+
 .form__textarea textarea::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2245,6 +2275,11 @@ button,
   background: #041427;
   border-radius: 3px;
   border-color: transparent;
+  cursor: pointer;
+}
+
+.form__button-submit button:hover {
+  opacity: 0.8;
 }
 
 .form__personal-info {
@@ -2359,6 +2394,10 @@ button,
 
 .socials__item {
   padding: 5px;
+}
+
+.socials__item:hover {
+  opacity: 0.8;
 }
 
 .site-sections {
@@ -2487,10 +2526,15 @@ button,
   content: "";
 }
 
+.personal-info__control:hover {
+  opacity: 0.8;
+}
+
 .personal-info__checkbox[type=checkbox]:checked + .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
   background-color: #00b3ff;
+  cursor: pointer;
   width: 15px;
   height: 15px;
 }
@@ -2506,6 +2550,10 @@ button,
   content: "";
 }
 
+.personal-info__checkbox[type=checkbox]:checked + .personal-info__control::before:hover {
+  opacity: 0.8;
+}
+
 .personal-info__text {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2518,6 +2566,10 @@ button,
 .accordion__button {
   background-color: transparent;
   border-style: none;
+}
+
+.accordion__button:hover {
+  opacity: 0.8;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
@@ -2969,7 +3021,7 @@ button,
   }
 
   .main-header {
-    padding: 0 50px;
+    padding: 0 5px;
     min-width: 320px;
     min-height: 70px;
   }
