@@ -93,6 +93,12 @@
   }
 }
 
+.office__item {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .office__item p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;

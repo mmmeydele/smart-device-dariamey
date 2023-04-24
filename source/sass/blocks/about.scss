@@ -154,6 +154,9 @@
   width: 180px;
   margin-top: 40px;
 
+  cursor: pointer;
+  user-select: none;
+
   &:hover {
     opacity: 0.8;
   }

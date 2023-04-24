@@ -1,3 +1,9 @@
+.personal-info {
+  &:hover {
+  opacity: 0.8;
+}
+}
+
 .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -12,6 +18,10 @@
   &:hover {
     opacity: 0.8;
   }
+
+  &:focus {
+    outline: #041427;
+  }
 }
 
 .personal-info__checkbox[type="checkbox"]:checked + .personal-info__control {
@@ -22,6 +32,10 @@
 
   width: 15px;
   height: 15px;
+
+  &:focus {
+    outline: #041427;
+  }
 }
 
 
@@ -38,6 +52,10 @@
 
   &:hover {
     opacity: 0.8;
+  }
+
+  &:focus {
+    outline: #041427;
   }
 }
 

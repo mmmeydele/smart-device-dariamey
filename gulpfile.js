@@ -6,13 +6,19 @@ import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
 import js from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
-const ghPages = require('gh-pages');
-const path = require('path');
+// const ghPages = require('gh-pages');
+// const path = require('path');
+
+import ghPages from "gh-pages";
+import path from "path";
 
 function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 }
-exports.deploy = deploy;
+
+// exports.deploy = deploy;
+
+export {deploy};
 
 const server = browserSync.create();
 const streamStyles = () => styles().pipe(server.stream());

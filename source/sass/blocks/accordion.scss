@@ -2,14 +2,14 @@
   background-color: transparent;
   border-style: none;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
   @media (max-width: $vp-767) {
     position: relative;
     width: 320px;
     padding: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

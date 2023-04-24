@@ -437,6 +437,7 @@ html {
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -689,7 +690,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -754,8 +755,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 18px;
+  right: 16px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -763,6 +764,10 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.8;
 }
 
 .modal--responsive .modal__content {
@@ -802,6 +807,7 @@ button,
   color: #ffffff;
   margin: 0;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .modal__description {
@@ -813,6 +819,7 @@ button,
   color: #ffffff;
   margin: 0;
   margin-bottom: 40px;
+  max-width: 400px;
 }
 
 .modal__form form {
@@ -886,10 +893,6 @@ button,
   color: #ffffff;
 }
 
-.modal__name input:focus {
-  outline: #041427;
-}
-
 .modal__textarea textarea {
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -961,6 +964,10 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #ffffff;
   width: 420px;
   height: 45px;
@@ -977,6 +984,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-ordinal-group: 7;
+  -ms-flex-order: 6;
+  order: 6;
   width: 395px;
   height: 20px;
   margin-top: 20px;
@@ -1558,6 +1568,10 @@ button,
   margin-right: 60px;
   margin-bottom: 5px;
   min-width: 130px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .logo .logo__image {
@@ -1701,6 +1715,10 @@ button,
   padding: 18px 22px;
   width: 410px;
   height: 55px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .intro__button:hover {
@@ -1910,6 +1928,11 @@ button,
   padding: 12px;
   width: 180px;
   margin-top: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about__button:hover {
@@ -1968,6 +1991,11 @@ button,
 .catalog__item {
   min-height: 650px;
   position: relative;
+  cursor: pointer;
+}
+
+.catalog__item:hover {
+  opacity: 0.8;
 }
 
 .catalog__item.catalog__item--accessories {
@@ -2276,6 +2304,10 @@ button,
   border-radius: 3px;
   border-color: transparent;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__button-submit button:hover {
@@ -2296,6 +2328,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-ordinal-group: 7;
+  -ms-flex-order: 6;
+  order: 6;
 }
 
 .form__personal-info .personal-info__text {
@@ -2449,6 +2484,10 @@ button,
   max-width: 220px;
 }
 
+.site-sections__item:hover {
+  opacity: 0.8;
+}
+
 .site-sections__item a {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2498,6 +2537,10 @@ button,
   gap: 8px;
 }
 
+.office__item:hover {
+  opacity: 0.8;
+}
+
 .office__item p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2516,6 +2559,10 @@ button,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.personal-info:hover {
+  opacity: 0.8;
+}
+
 .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -2530,6 +2577,10 @@ button,
   opacity: 0.8;
 }
 
+.personal-info__control:focus {
+  outline: #041427;
+}
+
 .personal-info__checkbox[type=checkbox]:checked + .personal-info__control {
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -2537,6 +2588,10 @@ button,
   cursor: pointer;
   width: 15px;
   height: 15px;
+}
+
+.personal-info__checkbox[type=checkbox]:checked + .personal-info__control:focus {
+  outline: #041427;
 }
 
 .personal-info__checkbox[type=checkbox]:checked + .personal-info__control::before {
@@ -2554,6 +2609,10 @@ button,
   opacity: 0.8;
 }
 
+.personal-info__checkbox[type=checkbox]:checked + .personal-info__control::before:focus {
+  outline: #041427;
+}
+
 .personal-info__text {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -2566,10 +2625,6 @@ button,
 .accordion__button {
   background-color: transparent;
   border-style: none;
-}
-
-.accordion__button:hover {
-  opacity: 0.8;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
@@ -3457,6 +3512,10 @@ button,
     position: relative;
     width: 320px;
     padding: 0;
+  }
+
+  .accordion__button:hover {
+    opacity: 0.8;
   }
 
   .accordion__toggle.accordion__toggle--closed::before,

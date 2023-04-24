@@ -9,14 +9,6 @@ import {initAccordions, accordions} from './modules/init-accordion';
 /* eslint-enable */
 
 
-let inputName = document.querySelector('.modal__name input[id="call-name"]');
-let buttonModal = document.querySelector('.main-header__button');
-
-buttonModal.addEventListener('click', function () {
-  setTimeout(inputName.focus(), 2000);
-});
-
-
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initAccordions();

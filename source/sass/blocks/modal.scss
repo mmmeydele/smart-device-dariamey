@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -77,8 +77,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 18px;
+    right: 16px;
     z-index: 1;
 
     width: 40px;
@@ -88,6 +88,10 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &--responsive {
@@ -133,6 +137,7 @@
 
   margin: 0;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .modal__description {
@@ -146,6 +151,8 @@
 
   margin: 0;
   margin-bottom: 40px;
+
+  max-width: 400px;
 }
 
 .modal__form form {
@@ -182,11 +189,11 @@
   }
 }
 
-.modal__name input {
-  &:focus {
-    outline: #041427;
-  }
-}
+// .modal__name input {
+//   &:focus {
+//     outline: #041427;
+//   }
+// }
 
 .modal__textarea textarea {
   background: rgba(4, 20, 39, 0.15);
@@ -228,7 +235,7 @@
   text-transform: uppercase;
 
   cursor: pointer;
-
+  user-select: none;
   color: #ffffff;
 
   width: 420px;
@@ -242,6 +249,7 @@
 .modal__personal-info {
   display: flex;
   flex-direction: row;
+  order: 6;
 
   width: 395px;
   height: 20px;

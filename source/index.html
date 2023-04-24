@@ -173,7 +173,7 @@
         </div>
 
         <ul class="catalog__list">
-          <li class="catalog__item catalog__item--production">
+          <li class="catalog__item catalog__item--production" tabindex="0">
             <a href="#">
               <h3>Производство<br> печатных плат</h3>
               <span class="catalog__item-arrow">
@@ -183,7 +183,7 @@
               </span>
             </a>
           </li>
-          <li class="catalog__item catalog__item--installation">
+          <li class="catalog__item catalog__item--installation" tabindex="0">
             <a href="#">
               <h3>Монтаж печатных плат</h3>
               <span class="catalog__item-arrow">
@@ -193,7 +193,7 @@
               </span>
             </a>
           </li>
-          <li class="catalog__item catalog__item--accessories">
+          <li class="catalog__item catalog__item--accessories" tabindex="0">
             <a href="#">
               <h3>Комплектующие<br> для светотехники</h3>
               <span class="catalog__item-arrow">
@@ -226,11 +226,8 @@
                   <textarea placeholder="Ваш вопрос" aria-label="question"></textarea>
                 </div>
 
-                <div class="form__button-submit">
-                  <button type="submit">Задать вопрос</button>
-                </div>
 
-                <div class="form__personal-info personal-info">
+                <div class="form__personal-info personal-info" tabindex="0">
                   <label for="personal-information" aria-label="Согласие на обработку персональных данных">
                     <input class="personal-info__checkbox visually-hidden" type="checkbox" id="personal-information"
                       value="" checked>
@@ -238,6 +235,11 @@
                   </label>
                   <p class="personal-info__text">Я согласен на обработку персональных данных</p>
                 </div>
+
+                <div class="form__button-submit">
+                  <button type="submit">Задать вопрос</button>
+                </div>
+
               </form>
             </div>
           </div>
@@ -377,7 +379,7 @@
         <div class="modal__form">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal__form-field modal__name">
-              <input type="text" id="call-name" placeholder="Имя" required autofocus aria-label="name">
+              <input type="text" id="call-name" placeholder="Имя" required aria-label="name" data-focus>
             </div>
 
             <div class="modal__form-field modal__phone">
@@ -389,8 +391,7 @@
               <textarea placeholder="Ваш вопрос" aria-label="question"></textarea>
             </div>
 
-            <button class="modal__button-submit modal__button-submit--active" type="submit">ОТПРАВИТЬ</button>
-            <div class="modal__personal-info personal-info" aria-label="Согласие на обработку персональных данных">
+            <div class="modal__personal-info personal-info" tabindex="0" aria-label="Согласие на обработку персональных данных">
               <label for="call-personal-information">
                 <input class="personal-info__checkbox visually-hidden" type="checkbox" id="call-personal-information"
                   value="" checked>
@@ -398,6 +399,7 @@
               </label>
               <p class="personal-info__text">Я согласен на обработку персональных данных</p>
             </div>
+            <button class="modal__button-submit modal__button-submit--active" type="submit">ОТПРАВИТЬ</button>
 
           </form>
         </div>

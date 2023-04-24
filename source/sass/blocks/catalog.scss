@@ -116,6 +116,11 @@
   min-height: 650px;
 
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media (max-width: $vp-1023) {
     min-height: 250px;
@@ -125,6 +130,7 @@
     min-height: 250px;
   }
 }
+
 
 .catalog__item--installation h3 {
   @media (max-width: $vp-1023) {
